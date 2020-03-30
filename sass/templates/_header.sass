@@ -1,4 +1,4 @@
-.header
+.header-partners
   border-bottom: 1px solid $darkGrey
   padding-bottom: 0.3rem
   padding-top: 6px
@@ -31,4 +31,64 @@
     padding-bottom: 0.1rem
     &-icon
       opacity: 0.3
-      padding-left: 0.25hrem
+      padding-left: 0.25rem
+.menu
+  &__logo
+    padding-top: 1.1rem
+  &__nav
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-left: auto
+    margin-right: 3.4rem
+    width: 100%
+    max-width: 51.2rem
+  &__item
+    padding: 1rem 0
+    text-decoration: none
+    font-size: 1.14rem
+    color: black
+    font-weight: 500
+    font-family: "DIN Pro - Medium", sans-serif
+  &__search
+    color: $orange
+  &__flag
+    position: relative
+    &--empty
+      margin-right: 0.8rem
+      &::before
+        content: '\f004'
+        font-family: "Font Awesome 5 Free"
+        font-size: 21px
+        color: $orange
+        background-color: transparent
+        position: absolute
+        top: calc( 25% - 10px )
+        left: calc( 50% - 9px )
+      &::after
+        content: '2'
+        font-size: 16px
+        color: $orange
+        background-color: transparent
+        position: absolute
+        bottom: calc( 40% - 8px )
+        right: calc( 50% - 6px )
+    &--full
+      &::before
+        content: '\f290'
+        font-family: "Font Awesome 5 Free"
+        font-size: 20px
+        color: white
+        font-weight: 900
+        background-color: transparent
+        position: absolute
+        top: calc( 25% - 10px )
+        left: calc( 50% - 8px )
+      &::after
+        content: '0'
+        font-size: 16px
+        color: white
+        background-color: transparent
+        position: absolute
+        bottom: calc( 40% - 8px )
+        right: calc( 50% - 5px )
