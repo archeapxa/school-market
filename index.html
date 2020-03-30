@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,23 +9,26 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  
+
   <header class="header-partners">
     <div class="container">
-        <div class="row header-partners__row">
-          <a href="#"><img class="header-partners__logo-small" src="img/bmc-icon-small.png" alt="icon-small"></a>
-          <div class="header-partners__links">
-            <a href="#" class="header-partners__link">Соц. сети <i class="fas fa-comment-dots"></i></a>
-            <a href="#" class="header-partners__link">Торгов. сети <i class="fas fa-cart-plus"></i></a>
-            <a href="#" class="header-partners__link">Туристич. сети <i class="fas fa-globe"></i></a>
-            <a href="#" class="header-partners__link">Ассоциации <i class="fas fa-eye"></i></a>
-            <a href="#" class="header-partners__link">Сервисы <i class="fas fa-wrench"></i></a>
-          </div>
-          <a href="#" class="#"><img class="header-partners__android-icon" src="img/android-logo.svg" alt="android icon"></a>
-          <a href="#" class="header-partners__login">Вход на сайт <i class="fas fa-lock header-partners__login-icon"></i></a>
+      <div class="row header-partners__row">
+        <a href="#"><img class="header-partners__logo-small" src="img/bmc-icon-small.png" alt="icon-small"></a>
+        <div class="header-partners__links">
+          <a href="#" class="header-partners__link">Соц. сети <i class="fas fa-comment-dots"></i></a>
+          <a href="#" class="header-partners__link">Торгов. сети <i class="fas fa-cart-plus"></i></a>
+          <a href="#" class="header-partners__link">Туристич. сети <i class="fas fa-globe"></i></a>
+          <a href="#" class="header-partners__link">Ассоциации <i class="fas fa-eye"></i></a>
+          <a href="#" class="header-partners__link">Сервисы <i class="fas fa-wrench"></i></a>
         </div>
-        <!-- row -->
+        <a href="#" class="#"><img class="header-partners__android-icon" src="img/android-logo.svg"
+            alt="android icon"></a>
+        <a href="#" class="header-partners__login">Вход на сайт <i
+            class="fas fa-lock header-partners__login-icon"></i></a>
+      </div>
+      <!-- row -->
     </div>
     <!-- container -->
   </header>
@@ -55,10 +59,55 @@
   </header>
   <!-- menu -->
 
+  <main class="main">
+    <section class="hero">
+      <div class="container hero__container">
+        <div class="swiper-container hero__swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="row hero__row">
+                <div class="hero__text">
+                  <h1 class="hero__title">Школьная форма<br>по <span class="hero__title--bold" >самым выгодным</span> ценам</h1>
+                  <button class="hero__button">Подробнее <i class="fas fa-angle-right"></i></button>
+                </div>
+                <!-- hero__text -->
+                <div class="hero__item">
+                  <img src="img/hero/slide-1.png" alt="child">
+                  <div class="hero__item-text">
+                    <strong class="hero__item-description">Комплект школьной формы «Модерн-стиль»</strong>
+                    <p class="hero__item-price">от <strong class="hero__item-price-summ">9000</strong> тг.</p>
+                  </div>
+                </div>
+                <!-- hero__item -->
+              </div>
+            </div>
+            <!-- swiper-slide -->
+          </div>
+          <!-- swiper-wrapper -->
+
+          <div class="swiper-button-prev hero__button-prev"></div>
+          <div class="swiper-button-next hero__button-next"></div>
+
+        </div>
+        <!-- swiper-container -->
+
+        <div class="hero__social">
+          <a href="#" class="hero__social-link"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="hero__social-link"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="hero__social-link"><i class="fab fa-vk"></i></a>
+          <a href="#" class="hero__social-link"><i class="fab fa-youtube"></i></a>
+        </div>
+
+      </div>
+      <!-- container -->
+    </section>
+    <!-- /.hero -->
+  </main>
 
 
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/swiper.min.js"></script>
   <script src="js/main.js"></script>
 </body>
+
 </html>

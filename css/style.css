@@ -357,6 +357,20 @@ img {
   font-style: normal;
   font-display: swap; }
 
+@font-face {
+  font-family: 'DIN Pro - Light';
+  src: url("../fonts/DIN/DINPro-Light.woff") format("woff"), url("../fonts/DIN/DINPro-Light.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'DIN Pro - Bold';
+  src: url("../fonts/DIN/DINPro-Bold.woff") format("woff"), url("../fonts/DIN/DINPro-Bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
 .header-partners {
   border-bottom: 1px solid #d7cbd1;
   padding-bottom: 0.3rem;
@@ -473,6 +487,133 @@ img {
     right: -webkit-calc( 50% - 5px);
     right: calc( 50% - 5px); }
 
+.hero__container {
+  position: relative; }
+
+.hero__swiper {
+  width: 100%; }
+
+.hero__row {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+
+.hero__text {
+  position: relative; }
+  .hero__text::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 50px;
+    top: -12px;
+    left: 0;
+    background-color: #d7cbd1; }
+
+.hero__title {
+  font-size: 2.57rem;
+  text-transform: uppercase;
+  font-family: "DIN Pro - Light", sans-serif;
+  font-weight: 300;
+  max-width: 30rem;
+  margin-bottom: 2.36rem; }
+  .hero__title--bold {
+    font-family: "DIN Pro - Bold", sans-serif; }
+
+.hero__button {
+  position: relative;
+  background-color: #202020;
+  color: white;
+  padding: 14px 30px;
+  font-size: 1.25rem;
+  border: none;
+  cursor: pointer; }
+  .hero__button::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 50px;
+    bottom: -40px;
+    left: 0;
+    background-color: #d7cbd1; }
+
+.hero__item {
+  margin-left: -2rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+  .hero__item-text {
+    margin-left: -5rem;
+    margin-bottom: 3.5rem; }
+  .hero__item-description {
+    position: relative;
+    display: inline-block;
+    max-width: 12.8rem;
+    color: #919191;
+    font-weight: normal;
+    line-height: 1.285rem; }
+    .hero__item-description::before {
+      content: '';
+      position: absolute;
+      height: 1px;
+      width: 30px;
+      top: -19px;
+      left: 0;
+      background-color: #d7cbd1; }
+  .hero__item-price {
+    color: #919191;
+    margin-top: 0.9rem;
+    margin-bottom: 0; }
+    .hero__item-price-summ {
+      color: #f47920;
+      font-size: 1.71rem; }
+
+.hero__social {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: cemter;
+  -webkit-align-items: cemter;
+      -ms-flex-align: cemter;
+          align-items: cemter;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-height: 119px;
+  height: 100%;
+  right: 0;
+  bottom: 0;
+  z-index: 2; }
+  .hero__social-link {
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #c0aeb7;
+    text-decoration: none; }
+
 @media screen and (min-width: 992px) {
   .header-partners__link:hover {
     opacity: 1; }
@@ -482,4 +623,6 @@ img {
     opacity: 1; }
   .menu__item:hover {
     color: #f47920;
-    border-bottom: 1px solid #f47920; } }
+    border-bottom: 1px solid #f47920; }
+  .hero__social-link:hover {
+    color: #202020; } }
