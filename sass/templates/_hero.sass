@@ -1,4 +1,5 @@
 .hero
+  padding-top: 1.7rem
   &__container
     position: relative
   &__swiper
@@ -8,46 +9,61 @@
     justify-content: flex-start
   &__text
     position: relative
+    margin-bottom: 13.7rem
+    margin-left: 0.1rem
     &::before
       content: ''
       position: absolute
       height: 1px
       width: 50px
-      top: -12px
+      top: -6px
       left: 0
       background-color: $darkGrey
   &__title
-    font-size: 2.57rem
+    font-size: 2.61rem
     text-transform: uppercase
     font-family: "DIN Pro - Light", sans-serif
     font-weight: 300
     max-width: 30rem
-    margin-bottom: 2.36rem
+    margin-bottom: 2.2rem
+    line-height: 130%
     &--bold
       font-family: "DIN Pro - Bold", sans-serif
   &__button
     position: relative
     background-color: $mainBlack
     color: white
-    padding: 14px 30px
-    font-size: 1.25rem
+    padding: 16px 29px
+    margin-left: 0.07rem
+    font-size: 1.3rem
     border: none
     cursor: pointer
+    &-icon
+      font-size: 1rem
+      padding-left: 0.65rem
     &::after
       content: ''
       position: absolute
       height: 1px
       width: 50px
-      bottom: -40px
+      bottom: -41px
       left: 0
       background-color: $darkGrey
+    &-prev
+      bottom: 128px
+      left: 2px
+      top: auto
+    &-next
+      bottom: 128px
+      left: 57px
+      top: auto
   &__item
-    margin-left: -2rem
+    margin-left: -2.25rem
     display: flex
     align-items: flex-end
     &-text
-      margin-left: -5rem
-      margin-bottom: 3.5rem
+      margin-left: -4.3rem
+      margin-bottom: 3.3rem
     &-description
       position: relative
       display: inline-block
@@ -60,12 +76,12 @@
         position: absolute
         height: 1px
         width: 30px
-        top: -19px
+        top: -17px
         left: 0
         background-color: $darkGrey
     &-price
       color: $greyText
-      margin-top: 0.9rem
+      margin-top: 0.7rem
       margin-bottom: 0
       &-summ
         color: $orange
@@ -79,7 +95,7 @@
     max-height: 119px
     height: 100%
     right: 0
-    bottom: 0
+    bottom: 49px
     z-index: 2
     &-link
       cursor: pointer

@@ -17,11 +17,11 @@
       <div class="row header-partners__row">
         <a href="#"><img class="header-partners__logo-small" src="img/bmc-icon-small.png" alt="icon-small"></a>
         <div class="header-partners__links">
-          <a href="#" class="header-partners__link">Соц. сети <i class="fas fa-comment-dots"></i></a>
-          <a href="#" class="header-partners__link">Торгов. сети <i class="fas fa-cart-plus"></i></a>
-          <a href="#" class="header-partners__link">Туристич. сети <i class="fas fa-globe"></i></a>
-          <a href="#" class="header-partners__link">Ассоциации <i class="fas fa-eye"></i></a>
-          <a href="#" class="header-partners__link">Сервисы <i class="fas fa-wrench"></i></a>
+          <a href="#" class="header-partners__link">Соц. сети <i class="header__icon fas fa-comment-dots"></i></a>
+          <a href="#" class="header-partners__link">Торгов. сети <i class="header__icon fas fa-cart-plus"></i></a>
+          <a href="#" class="header-partners__link">Туристич. сети <i class="header__icon fas fa-globe"></i></a>
+          <a href="#" class="header-partners__link">Ассоциации <i class="header__icon fas fa-eye"></i></a>
+          <a href="#" class="header-partners__link">Сервисы <i class="header__icon fas fa-wrench"></i></a>
         </div>
         <a href="#" class="#"><img class="header-partners__android-icon" src="img/android-logo.svg"
             alt="android icon"></a>
@@ -35,16 +35,16 @@
   <!-- header-partners -->
   <header class="menu">
     <div class="container">
-      <div class="row">
+      <div class="menu__row">
         <a href="#" class="menu__logo"><img src="img/logo-big.png" alt="logo-big"></a>
         <nav class="menu__nav">
           <a href="#" class="menu__item">Объявления</a>
-          <a href="#" class="menu__item">Каталоги <i class="fas fa-angle-down"></i></a>
+          <a href="#" class="menu__item">Каталоги <i class="header__icon fas fa-angle-down"></i></a>
           <a href="#" class="menu__item">Участники</a>
           <a href="#" class="menu__item">Партеры</a>
           <a href="#" class="menu__item">О платформе</a>
           <a href="#" class="menu__item">Новости</a>
-          <a href="#" class="menu__search"><i class="fas fa-search"></i></a>
+          <a href="#" class="menu__search"><i class="header__icon fas fa-search"></i></a>
         </nav>
         <div class="menu__flag menu__flag--empty">
           <img src="img/flag-empty.svg" alt="flag empty">
@@ -62,13 +62,52 @@
   <main class="main">
     <section class="hero">
       <div class="container hero__container">
-        <div class="swiper-container hero__swiper">
+        <div class="swiper-container hero__swiper swiper-no-swiping">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="row hero__row">
                 <div class="hero__text">
-                  <h1 class="hero__title">Школьная форма<br>по <span class="hero__title--bold" >самым выгодным</span> ценам</h1>
-                  <button class="hero__button">Подробнее <i class="fas fa-angle-right"></i></button>
+                  <h1 class="hero__title">Школьная форма<br>по <span class="hero__title--bold">самым выгодным</span>
+                    ценам</h1>
+                  <button class="hero__button">Подробнее <i class="hero__button-icon fas fa-angle-right"></i></button>
+                </div>
+                <!-- hero__text -->
+                <div class="hero__item">
+                  <img src="img/hero/slide-1.png" alt="child">
+                  <div class="hero__item-text">
+                    <strong class="hero__item-description">Комплект школьной формы «Модерн-стиль»</strong>
+                    <p class="hero__item-price">от <strong class="hero__item-price-summ">9000</strong> тг.</p>
+                  </div>
+                </div>
+                <!-- hero__item -->
+              </div>
+            </div>
+            <!-- swiper-slide -->
+            <div class="swiper-slide">
+              <div class="row hero__row">
+                <div class="hero__text">
+                  <h1 class="hero__title">Школьная форма<br>по <span class="hero__title--bold">самым выгодным</span>
+                    ценам</h1>
+                  <button class="hero__button">Подробнее <i class="hero__button-icon fas fa-angle-right"></i></button>
+                </div>
+                <!-- hero__text -->
+                <div class="hero__item">
+                  <img src="img/hero/slide-1.png" alt="child">
+                  <div class="hero__item-text">
+                    <strong class="hero__item-description">Комплект школьной формы «Модерн-стиль»</strong>
+                    <p class="hero__item-price">от <strong class="hero__item-price-summ">9000</strong> тг.</p>
+                  </div>
+                </div>
+                <!-- hero__item -->
+              </div>
+            </div>
+            <!-- swiper-slide -->
+            <div class="swiper-slide">
+              <div class="row hero__row">
+                <div class="hero__text">
+                  <h1 class="hero__title">Школьная форма<br>по <span class="hero__title--bold">самым выгодным</span>
+                    ценам</h1>
+                  <button class="hero__button">Подробнее <i class="hero__button-icon fas fa-angle-right"></i></button>
                 </div>
                 <!-- hero__text -->
                 <div class="hero__item">
@@ -85,8 +124,8 @@
           </div>
           <!-- swiper-wrapper -->
 
-          <div class="swiper-button-prev hero__button-prev"></div>
-          <div class="swiper-button-next hero__button-next"></div>
+          <div class="swiper-button-prev hero__button-prev"><i class="fas fa-angle-left"></i></div>
+          <div class="swiper-button-next hero__button-next"><i class="fas fa-angle-right"></i></div>
 
         </div>
         <!-- swiper-container -->

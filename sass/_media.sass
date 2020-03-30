@@ -19,3 +19,21 @@
       &-link
         &:hover
           color: $mainBlack
+    &__button
+      &:hover
+        background-color: $orange
+      &-next, &-prev
+        &:hover
+          background-color: $orange
+          border-color: $orange
+@media screen and ( max-width: 1200px )
+  html
+    font-size: 12px
+  .hero
+    &__item
+      &-text
+        order: -1
+        margin-left: -15rem
+@media screen and ( max-width: 991px )
+  .row
+    flex-direction: column
