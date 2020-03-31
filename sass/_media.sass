@@ -37,3 +37,45 @@
 @media screen and ( max-width: 991px )
   .row
     flex-direction: column
+    align-items: flex-start
+  .menu
+    &__flag
+      min-height: 60px
+      &:first-of-type
+        margin-left: auto
+  .hero
+    &__text
+      margin-bottom: 0
+    &__item
+      margin-left: 0
+      overflow-x: hidden
+      &-text
+        margin-left: 0
+        margin-right: -5rem
+        align-self: flex-start
+        margin-top: 3rem
+      &-description
+        width: 12.8rem
+    &__button
+      &::after
+        display: none
+    &__social
+      bottom: auto
+      top: 30px
+@media screen and ( max-width: 870px )
+  .header-partners
+    &__links
+      display: none
+    &__android-icon
+      display: none
+  .menu
+    &__nav
+      display: none
+@media screen and ( max-width: 576px )
+  .hero
+    &__title
+      font-size: 1.8rem
+      max-width: 25rem
+    &__button
+      &-prev, &-next
+        bottom: 70px
