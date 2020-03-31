@@ -3,24 +3,27 @@
     font-size: 35px
     color: white
     background-color: $mainBlack
-    // height: 44px
-    // width: 44px
     padding: 1px 20px 1px 22px
     border: 1px solid $mainBlack
-    // display: flex
-    // justify-content: center
-    // align-items: center
     &::after
       display: none
   &-button-disabled
     color: $disabled
     background-color: transparent
     border: 1px solid $disabled
-  &-button-prev
-    // bottom: 120px
-    // left: 20px
-    // top: auto
-  &-button-next
-    // bottom: 120px
-    // left: 70px
-    // top: auto    
+.section
+  &-title
+    &--bordered
+  &-header
+    margin: 0
+.button
+  padding: 12px 27px 13px
+  font-size: 1rem
+  font-family: 'DIN Pro - Medium', sans-serif
+  font-weight: 500
+  border: 2px solid $mainBlack
+  word-spacing: 0.75rem
+  &--outline
+    background-color: transparent
+    color: $mainBlack
+
