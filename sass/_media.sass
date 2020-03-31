@@ -48,6 +48,11 @@
       &-icon
         &:hover
           color: $orange
+  .banner
+    &__button
+      &:hover
+        background-color: $light
+        color: $orange
 @media screen and ( max-width: 1200px )
   html
     font-size: 12px
@@ -58,6 +63,9 @@
         margin-left: -15rem
   .timer
     font-size: 12px
+  .banner
+    &__header
+      font-size: 4rem
 @media screen and ( max-width: 991px )
   .row
     flex-direction: column
@@ -113,6 +121,13 @@
       min-height: 320px
   .timer
     font-size: 8px
+  .banner
+    &__header
+      font-size: 3rem
+      line-height: 5rem
+    &__text
+      margin-top: 0
+      font-size: 1.8rem
 @media screen and ( max-width: 870px )
   .header-partners
     &__links
@@ -125,6 +140,20 @@
 @media screen and ( max-width: 767px )
   .timer
     font-size: 6px
+  .banner
+    &__content
+      align-self: center
+    &__header
+      margin-top: 0
+      font-size: 2.5rem
+      line-height: 3.5rem
+    &__text
+      font-size: 1.5rem
+    &__image
+      // align-self: flex-end
+      // width: 50%
+      img
+        object-fit: cover
 @media screen and ( max-width: 576px )
   .hero
     &__title
@@ -137,4 +166,6 @@
     &__card
       padding-right: 7%
   .timer
+    display: none
+  .banner
     display: none
