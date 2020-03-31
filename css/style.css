@@ -372,12 +372,15 @@ img {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  padding-bottom: 2.2rem; }
 
 .section-header {
+  position: relative;
   display: inline-block;
   margin: 0;
-  padding: 2.4rem 4.1rem; }
+  padding: 2.4rem 4.1rem;
+  text-align: center; }
   .section-header--bordered {
     border: 2px solid #202020;
     font-size: 1.74rem;
@@ -727,10 +730,10 @@ img {
         -ms-flex-align: center;
             align-items: center;
     background-color: #f8f6f7;
-    padding: 0 50px; }
+    padding: 0 12%; }
     .approved__card-img {
-      height: 100%;
-      padding-right: 1.1rem; }
+      padding-right: 1.1rem;
+      max-width: 55%; }
     .approved__card-content {
       text-align: right;
       margin-bottom: 4.1rem; }
@@ -761,7 +764,10 @@ img {
     background-color: #f47920; }
   .hero__button-next:hover, .hero__button-prev:hover {
     background-color: #f47920;
-    border-color: #f47920; } }
+    border-color: #f47920; }
+  .button--outline:hover {
+    background-color: #202020;
+    color: #ffffff; } }
 
 @media screen and (max-width: 1200px) {
   html {
@@ -780,18 +786,24 @@ img {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: start;
-    -webkit-align-items: flex-start;
-        -ms-flex-align: start;
-            align-items: flex-start; }
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
   .menu__flag {
     min-height: 60px; }
     .menu__flag:first-of-type {
       margin-left: auto; }
+  .hero__row {
+    -webkit-box-align: start;
+    -webkit-align-items: start;
+        -ms-flex-align: start;
+            align-items: start; }
   .hero__text {
     margin-bottom: 0; }
   .hero__item {
     margin-left: 0;
+    margin: auto;
     overflow-x: hidden; }
     .hero__item-text {
       margin-left: 0;
@@ -806,7 +818,9 @@ img {
     display: none; }
   .hero__social {
     bottom: auto;
-    top: 30px; } }
+    top: 30px; }
+  .approved__card {
+    margin-bottom: 3rem; } }
 
 @media screen and (max-width: 870px) {
   .header-partners__links {
@@ -821,4 +835,6 @@ img {
     font-size: 1.8rem;
     max-width: 25rem; }
   .hero__button-prev, .hero__button-next {
-    bottom: 70px; } }
+    bottom: 70px; }
+  .approved__card {
+    padding-right: 7%; } }

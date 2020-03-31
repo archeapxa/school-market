@@ -26,6 +26,11 @@
         &:hover
           background-color: $orange
           border-color: $orange
+  .button
+    &--outline
+      &:hover
+        background-color: $mainBlack
+        color: $light
 @media screen and ( max-width: 1200px )
   html
     font-size: 12px
@@ -37,17 +42,20 @@
 @media screen and ( max-width: 991px )
   .row
     flex-direction: column
-    align-items: flex-start
+    align-items: center
   .menu
     &__flag
       min-height: 60px
       &:first-of-type
         margin-left: auto
   .hero
+    &__row
+      align-items: start
     &__text
       margin-bottom: 0
     &__item
       margin-left: 0
+      margin: auto
       overflow-x: hidden
       &-text
         margin-left: 0
@@ -62,6 +70,9 @@
     &__social
       bottom: auto
       top: 30px
+  .approved
+    &__card
+      margin-bottom: 3rem
 @media screen and ( max-width: 870px )
   .header-partners
     &__links
@@ -79,3 +90,6 @@
     &__button
       &-prev, &-next
         bottom: 70px
+  .approved
+    &__card
+      padding-right: 7%
