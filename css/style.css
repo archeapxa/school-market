@@ -360,8 +360,34 @@ img {
   background-color: transparent;
   border: 1px solid #c0aeb7; }
 
+.section-title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
 .section-header {
-  margin: 0; }
+  display: inline-block;
+  margin: 0;
+  padding: 2.4rem 4.1rem; }
+  .section-header--bordered {
+    border: 2px solid #202020;
+    font-size: 1.74rem;
+    font-weight: normal; }
+    .section-header--bordered i {
+      font-size: 1.2rem;
+      padding-left: 0.8rem; }
+  .section-header__bold-word {
+    font-weight: 700;
+    font-family: "DIN Pro - Bold", sans-serif; }
 
 .button {
   padding: 12px 27px 13px;

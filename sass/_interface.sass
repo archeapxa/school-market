@@ -13,9 +13,25 @@
     border: 1px solid $disabled
 .section
   &-title
+    display: flex
+    align-items: center
+    justify-content: center
     &--bordered
   &-header
+    display: inline-block
     margin: 0
+    padding: 2.4rem 4.1rem
+    &--bordered
+      border: 2px solid $mainBlack
+      font-size: 1.74rem
+      font-weight: normal
+      i
+        font-size: 1.2rem
+        padding-left: 0.8rem
+    &__bold-word
+      font-weight: 700
+      font-family: "DIN Pro - Bold", sans-serif
+
 .button
   padding: 12px 27px 13px
   font-size: 1rem
