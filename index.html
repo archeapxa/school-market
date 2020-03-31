@@ -59,7 +59,7 @@
   </header>
   <!-- menu -->
 
-  <main class="section main">
+  <main class="main">
     <section class="hero">
       <div class="container hero__container">
         <div class="swiper-container hero__swiper swiper-no-swiping">
@@ -161,7 +161,7 @@
                     мальчиков</span></h4>
 
                 <button class="button button--outline">
-                  Подробнее <i class="fas fa-angle-right"></i>
+                  Подробнее <i class="button__icon fas fa-angle-right"></i>
                 </button>
               </div>
               <!-- approved__card-content -->
@@ -178,7 +178,7 @@
                     девочек</span></h4>
 
                 <button class="button button--outline">
-                  Подробнее <i class="fas fa-angle-right"></i>
+                  Подробнее <i class="button__icon fas fa-angle-right"></i>
                 </button>
               </div>
               <!-- approved__card-content -->
@@ -195,7 +195,7 @@
                     class="approved__card-text--bold">аксессуары</span></h4>
 
                 <button class="button button--outline">
-                  Подробнее <i class="fas fa-angle-right"></i>
+                  Подробнее <i class="button__icon fas fa-angle-right"></i>
                 </button>
               </div>
               <!-- approved__card-content -->
@@ -217,28 +217,169 @@
         <!-- /.section-title -->
         <div class="row categories__row">
           <div class="col-23-4">
-            <a href="#" class="categories__link"><i class="categories__icon fas fa-table-tennis"></i>Развлечения, досуг</a>
+            <a href="#" class="categories__link"><i class="categories__icon fas fa-table-tennis"></i>Развлечения,
+              досуг</a>
           </div>
           <div class="col-23-4">
-            <a href="#" class="categories__link"><i class="categories__icon fas fa-wine-glass-alt"></i>Посуда и зеркала</a>
+            <a href="#" class="categories__link"><i class="categories__icon fas fa-wine-glass-alt"></i>Посуда и
+              зеркала</a>
           </div>
           <div class="col-23-4">
-            <a href="#" class="categories__link"><i class="categories__icon fas fa-spray-can"></i>Парфюмерия и косметика</a>
+            <a href="#" class="categories__link"><i class="categories__icon fas fa-spray-can"></i>Парфюмерия и
+              косметика</a>
           </div>
           <div class="col-23-4">
-            <a href="#" class="categories__link"><i class="categories__icon fas fa-keyboard"></i>Компьютерная техника</a>
+            <a href="#" class="categories__link"><i class="categories__icon fas fa-keyboard"></i>Компьютерная
+              техника</a>
           </div>
         </div>
         <!-- /.row -->
         <div class="categories__more">
           <button class="button button--outline">
-            Еще <i class="fas fa-angle-down"></i>
+            Еще <i class="button__icon fas fa-angle-down"></i>
           </button>
         </div>
       </div>
       <!-- /.container -->
     </section>
     <!-- /.section categories -->
+
+    <section class="section popular">
+      <div class="container">
+        <div class="section-title categories__section-title">
+          <h3 class="section-header">Популярные товары</h3>
+        </div>
+        <!-- /.section-title -->
+
+        <div class="row popular__row">
+          <div class="col-23-4 popular__col">
+            <div class="card">
+              <div class="card__image">
+                <img src="img/popular/item-11.png" alt="item-1">
+              </div>
+              <!-- card__image -->
+              <div class="card__info-container">
+                <h4 class="card__item-name">Блузка модель 111</h4>
+                <!-- /.card__item-name -->
+                <strong class="card__item-category">Женская одежда</strong>
+                <!-- /.card__item-category -->
+                <span class="card__rating">
+                  <i class="card__star-rated fas fa-star"></i>
+                  <i class="card__star-rated fas fa-star"></i>
+                  <i class="card__star-rated fas fa-star"></i>
+                  <i class="card__star-unrated far fa-star"></i>
+                  <i class="card__star-unrated far fa-star"></i>
+                </span>
+                <!-- card rating -->
+              </div>
+              <!-- /.card__info-container -->
+              <div class="card__price-container">
+                <a href="#" class="card__price"><strong class="card__price-number">3 000.00</strong> <span
+                    class="card__price-value"> тг.</span> <i class="card__plus-icon fas fa-plus-circle"></i></a>
+              </div>
+            </div>
+            <!-- card -->
+          </div>
+          <!-- col -->
+          <div class="col-23-4 popular__col">
+            <div class="card">
+              <div class="card__image">
+                <img src="img/popular/item-2.png" alt="item-2">
+              </div>
+              <!-- card__image -->
+              <div class="card__info-container">
+                <h4 class="card__item-name">Пуховик артикул: 2801</h4>
+                <!-- /.card__item-name -->
+                <strong class="card__item-category">Пуховики</strong>
+                <!-- /.card__item-category -->
+                <span class="card__rating">
+                  <i class="card__star-unrated far fa-star"></i>
+                  <i class="card__star-unrated far fa-star"></i>
+                  <i class="card__star-unrated far fa-star"></i>
+                  <i class="card__star-unrated far fa-star"></i>
+                  <i class="card__star-unrated far fa-star"></i>
+                </span>
+                <!-- card rating -->
+              </div>
+              <!-- /.card__info-container -->
+              <div class="card__price-container">
+                <a href="#" class="card__price"><strong class="card__price-number">21 200.00</strong> <span
+                    class="card__price-value"> тг.</span> <i class="card__plus-icon fas fa-plus-circle"></i></a>
+              </div>
+            </div>
+            <!-- card -->
+          </div>
+          <!-- col -->
+          <div class="col-23-4 popular__col">
+            <div class="card">
+              <div class="card__image">
+                <img src="img/popular/item-3.png" alt="item-3">
+              </div>
+              <!-- card__image -->
+              <div class="card__info-container">
+                <h4 class="card__item-name">Обувь Т 452</h4>
+                <!-- /.card__item-name -->
+                <strong class="card__item-category">Женская Обувь</strong>
+                <!-- /.card__item-category -->
+                <span class="card__rating">
+                  <i class="card__star-unrated far fa-star"></i>
+                  <i class="card__star-unrated far fa-star"></i>
+                  <i class="card__star-unrated far fa-star"></i>
+                  <i class="card__star-unrated far fa-star"></i>
+                  <i class="card__star-unrated far fa-star"></i>
+                </span>
+                <!-- card rating -->
+              </div>
+              <!-- /.card__info-container -->
+              <div class="card__price-container">
+                <a href="#" class="card__price"><strong class="card__price-number">12 555.00</strong> <span
+                    class="card__price-value"> тг.</span> <i class="card__plus-icon fas fa-plus-circle"></i></a>
+              </div>
+            </div>
+            <!-- card -->
+          </div>
+          <!-- col -->
+          <div class="col-23-4 popular__col">
+            <div class="card">
+              <div class="card__image">
+                <img src="img/popular/item-4.png" alt="item-4">
+              </div>
+              <!-- card__image -->
+              <div class="card__info-container">
+                <h4 class="card__item-name">Рюкзак PUMA</h4>
+                <!-- /.card__item-name -->
+                <strong class="card__item-category">Рюкзаки</strong>
+                <!-- /.card__item-category -->
+                <span class="card__rating">
+                  <i class="card__star-unrated far fa-star"></i>
+                  <i class="card__star-unrated far fa-star"></i>
+                  <i class="card__star-unrated far fa-star"></i>
+                  <i class="card__star-unrated far fa-star"></i>
+                  <i class="card__star-unrated far fa-star"></i>
+                </span>
+                <!-- card rating -->
+              </div>
+              <!-- /.card__info-container -->
+              <div class="card__price-container">
+                <a href="#" class="card__price"><strong class="card__price-number">5 000.00</strong> <span
+                    class="card__price-value"> тг.</span> <i class="card__plus-icon fas fa-plus-circle"></i></a>
+              </div>
+            </div>
+            <!-- card -->
+          </div>
+          <!-- col -->
+        </div>
+        <!-- row -->
+        <div class="popular__more">
+          <button class="button button--outline">
+            Больше товаров <i class="button__icon fas fa-angle-right"></i>
+          </button>
+        </div>
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section popular -->
+
 
   </main>
 

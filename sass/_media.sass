@@ -36,6 +36,10 @@
       &:hover
         background-color: $orange
         color: $light
+  .card
+    &__plus-icon
+      &:hover
+        color: $mainBlack
 @media screen and ( max-width: 1200px )
   html
     font-size: 12px
@@ -83,6 +87,17 @@
       flex-direction: row
       flex-wrap: wrap
       justify-content: space-around
+  .popular
+    &__row
+      height: auto
+    &__col
+      flex-basis: auto
+      width: 50%
+      margin-bottom: 4rem
+    .card
+      min-height: 560px
+      &__image
+        min-height: 320px
 @media screen and ( max-width: 870px )
   .header-partners
     &__links
@@ -103,3 +118,5 @@
   .approved
     &__card
       padding-right: 7%
+  .col-23-4
+    width: 100%

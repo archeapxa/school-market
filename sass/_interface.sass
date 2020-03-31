@@ -19,7 +19,6 @@
     justify-content: center
     margin-bottom: 2.2rem
     &--bordered
-
   &-header
     position: relative
     display: inline-block
@@ -71,6 +70,10 @@
     &__bold-word
       font-weight: 700
       font-family: "DIN Pro - Bold", sans-serif
+  i
+    // padding-left: 0.8rem
+
+
 
 button
   outline: none
@@ -81,9 +84,74 @@ button
   font-family: 'DIN Pro - Medium', sans-serif
   font-weight: 500
   border: 2px solid $mainBlack
-  word-spacing: 0.75rem
+  // word-spacing: 0.75rem
   text-align: center
   &--outline
     background-color: transparent
     color: $mainBlack
+  &__icon
+    margin-left: 0.75rem
 
+.card
+  width: 100%
+  height: 100%
+  &__image
+    background-color: $grey
+    width: 100%
+    height: 57%
+    max-height: 320px
+    display: flex
+    justify-content: center
+    align-items: center
+  &__info-container
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    height: 25%
+    max-height: 126px
+    padding: 6%
+    padding-bottom: 9%
+    border-bottom: 1px solid $darkGrey
+    margin-top: 0.45rem
+  &__item
+    &-name
+      margin: 0
+      font-size: 1.29rem
+      font-weight: normal
+    &-category
+      margin-top: 0.6rem
+      color: $disabled
+      font-family: "DIN Pro - Light", sans-serif
+      font-weight: 300
+  &__rating
+    margin-top: 1.3rem
+    font-size: 14px
+    word-spacing: 0.12rem
+  &__star
+    &-rated
+      color: $orange
+    &-unrated
+      color: $disabled
+  &__price-container
+    padding: 6%
+    padding-top: 7.8%
+    height: 20%
+  &__price
+    display: flex
+    justify-content: space-between
+    align-items: center
+    text-decoration: none
+    color: $mainBlack
+    font-size: 2.14rem
+    &-number
+      font-weight: 400
+    &-value
+      font-size: 1.24rem
+      margin-top: 0.55rem
+      margin-right: auto
+      margin-left: 0.25rem
+  &__plus-icon
+    color: $darkGrey
+    font-size: 1.8rem
+    display: flex
+    align-items: center
