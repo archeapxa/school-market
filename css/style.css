@@ -1087,7 +1087,8 @@ button {
 
 .banner {
   background: url(../img/banner/banner-bg.png) no-repeat center/cover;
-  padding-top: 2rem; }
+  padding-top: 2rem;
+  margin-top: 2rem; }
   .banner__row {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1133,6 +1134,56 @@ button {
         -ms-flex-item-align: end;
             align-self: flex-end; }
 
+.platforms {
+  padding-top: 4rem;
+  background-color: #ffffff; }
+  .platforms__section-title {
+    margin-bottom: 0.5rem; }
+  .platforms-swiper {
+    padding-bottom: 14.5rem; }
+  .platforms__button-prev, .platforms__button-next {
+    top: auto;
+    bottom: 23%; }
+  .platforms__button-prev {
+    left: -webkit-calc( 50% - 53px);
+    left: calc( 50% - 53px); }
+  .platforms__button-next {
+    left: -webkit-calc( 50% + 1px);
+    left: calc( 50% + 1px); }
+  .platforms__item-link {
+    font-family: "DIN Pro - Light", sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #866978;
+    text-align: start;
+    -webkit-align-self: flex-start;
+        -ms-flex-item-align: start;
+            align-self: flex-start; }
+  .platforms__item-name {
+    font-family: "DIN Pro", sans-serif;
+    font-size: 1.285rem;
+    color: #202020;
+    margin-top: 1rem;
+    margin-bottom: 0.8rem;
+    text-align: start;
+    -webkit-align-self: flex-start;
+        -ms-flex-item-align: start;
+            align-self: flex-start; }
+  .platforms__slide {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
 @media screen and (min-width: 992px) {
   .header-partners__link:hover {
     opacity: 1; }
@@ -1167,6 +1218,8 @@ button {
     color: #f47920; }
   .banner__button:hover {
     background-color: #ffffff;
+    color: #f47920; }
+  .platforms__item-link:hover .platforms__item-name {
     color: #f47920; } }
 
 @media screen and (max-width: 1200px) {
@@ -1291,3 +1344,13 @@ button {
     display: none; }
   .banner {
     display: none; } }
+
+@media screen and (max-width: 480px) {
+  .platforms__item-link {
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center; }
+  .platforms__item-name {
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center; } }

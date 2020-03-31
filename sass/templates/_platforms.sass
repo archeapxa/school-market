@@ -1,0 +1,36 @@
+.platforms
+  padding-top: 4rem
+  background-color: $light
+  &__section-title
+    margin-bottom: 0.5rem
+  &-swiper
+    padding-bottom: 14.5rem
+  &__slide
+    // flex-basis: 25%
+  &__button
+    &-prev, &-next
+      top: auto
+      bottom: 23%
+    &-prev
+      left: calc( 50% - 53px )
+    &-next
+      left: calc( 50% + 1px )
+  &__item-link
+    font-family: "DIN Pro - Light", sans-serif
+    font-size: 1rem
+    text-decoration: none
+    color: darken($disabled, 25%)
+    text-align: start
+    align-self: flex-start
+  &__item-name
+    font-family: "DIN Pro", sans-serif
+    font-size: 1.285rem
+    color: $mainBlack
+    margin-top: 1rem
+    margin-bottom: 0.8rem
+    text-align: start
+    align-self: flex-start
+  &__slide
+    display: flex
+    flex-direction: column
+    align-items: center

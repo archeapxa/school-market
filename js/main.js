@@ -3,12 +3,31 @@ $(document).ready(function () {
   var mySwiper = new Swiper ('.hero__swiper', {
     // Navigation arrows
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.hero__button-next',
+      prevEl: '.hero__button-prev',
     },
-    scrollbar: {
-      el: '.swiper-scrollbar',
+
+  });
+
+    var mySwiper2 = new Swiper ('.platforms-swiper', {
+    // Navigation arrows
+    navigation: {
+      nextEl: '.platforms__button-next',
+      prevEl: '.platforms__button-prev',
     },
+    slidesPerView: 1,
+    spaceBetween: 20,
+    breakpoints: {
+      991: {
+        slidesPerView: 4
+      },
+      767: {
+        slidesPerView: 3
+      },
+      480: {
+        slidesPerView: 2
+      }
+    }
   });
 
 

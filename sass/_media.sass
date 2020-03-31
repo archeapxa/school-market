@@ -53,6 +53,11 @@
       &:hover
         background-color: $light
         color: $orange
+  .platforms
+    &__item-link
+      &:hover
+        .platforms__item-name
+          color: $orange
 @media screen and ( max-width: 1200px )
   html
     font-size: 12px
@@ -169,3 +174,10 @@
     display: none
   .banner
     display: none
+@media screen and ( max-width: 480px )
+  .platforms
+    &__item-link
+      align-self: center
+    &__item-name
+      align-self: center
+
