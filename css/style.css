@@ -381,7 +381,8 @@ img {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 2.2rem; }
+  margin-bottom: 2.2rem;
+  overflow: hidden; }
 
 .section-header {
   position: relative;
@@ -455,6 +456,7 @@ button {
   width: 100%;
   height: 100%; }
   .card__image {
+    position: relative;
     background-color: #f8f6f7;
     width: 100%;
     max-height: 320px;
@@ -470,6 +472,39 @@ button {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
+    .card__image-hover {
+      position: absolute;
+      display: none;
+      -webkit-box-pack: end;
+      -webkit-justify-content: flex-end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      padding: 1.42rem;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.6); }
+    .card__image-icons {
+      position: relative;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      font-size: 20px;
+      z-index: 3;
+      color: #ffffff; }
+    .card__image-icon:first-child {
+      margin-bottom: 18px; }
   .card__info-container {
     display: -webkit-box;
     display: -webkit-flex;
@@ -940,10 +975,11 @@ button {
         -ms-flex-pack: center;
             justify-content: center; }
   .popular__row {
-    height: 40rem; }
+    padding-bottom: 2.2rem; }
 
 .timer {
   padding-top: 4.2rem;
+  padding-bottom: 2rem;
   background-color: #ffffff; }
   .timer__section-title {
     margin-bottom: 0.4rem; }
@@ -962,7 +998,7 @@ button {
     max-height: 14.14rem;
     width: 100%;
     height: 100%;
-    padding: 66px;
+    padding: 4.71rem;
     border: 5px solid #f47920;
     border-radius: 50%;
     display: -webkit-box;
@@ -983,16 +1019,59 @@ button {
         -ms-flex-pack: center;
             justify-content: center; }
   .timer__text {
-    margin-top: 10px;
+    margin-top: 0.714rem;
     font-family: "DIN Pro - Light", sans-serif;
-    font-size: 30px;
+    font-size: 2.142rem;
     font-weight: 300; }
   .timer__counter {
-    margin-top: -5px;
+    margin-top: -0.35rem;
     font-family: "DIN Pro - Bold", sans-serif;
-    font-size: 72px;
+    font-size: 5.142rem;
     color: #f47920;
     font-weight: 700; }
+  .timer__cross {
+    width: 4.14rem; }
+
+.discount {
+  background-color: #ffffff;
+  padding-top: 2.14rem; }
+  .discount__container {
+    overflow: visible; }
+  .discount__section-title {
+    margin-bottom: 0.55rem; }
+  .discount__size {
+    position: absolute;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    top: 15px;
+    left: -10px;
+    background-color: #f47920;
+    color: #ffffff;
+    padding: 9px 8px;
+    font-size: 30px;
+    font-weight: normal;
+    z-index: 3; }
+  .discount__price {
+    font-size: 1.29rem;
+    color: #c0aeb7;
+    margin-top: 0.8rem; }
+    .discount__price-number {
+      text-decoration: line-through;
+      display: inline-block; }
+    .discount__price-value {
+      text-decoration: none; }
+  .discount__more {
+    margin-top: 2.8rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
 
 @media screen and (min-width: 992px) {
   .header-partners__link:hover {
@@ -1017,8 +1096,15 @@ button {
   .categories__link:hover {
     background-color: #f47920;
     color: #ffffff; }
-  .card__plus-icon:hover {
-    color: #202020; } }
+  .card__price:hover .card__plus-icon {
+    color: #202020; }
+  .card__image:hover .card__image-hover {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .card__image-icon:hover {
+    color: #f47920; } }
 
 @media screen and (max-width: 1200px) {
   html {
@@ -1086,9 +1172,9 @@ button {
             justify-content: space-around; }
   .popular__row {
     height: auto; }
-  .popular .card {
-    min-height: 560px; }
-    .popular .card__image {
+  .card {
+    margin-bottom: 3rem; }
+    .card__image {
       min-height: 320px; } }
 
 @media screen and (max-width: 870px) {
