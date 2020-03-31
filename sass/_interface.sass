@@ -13,36 +13,67 @@
     border: 1px solid $disabled
 .section
   &-title
+    position: relative
     display: flex
     align-items: center
     justify-content: center
-    padding-bottom: 2.2rem
+    margin-bottom: 2.2rem
     &--bordered
+
   &-header
     position: relative
     display: inline-block
     margin: 0
     padding: 2.4rem 4.1rem
     text-align: center
+    font-size: 2.57rem
+    font-family: "DIN Pro - Light", sans-serif
+    font-weight: 300
+    &::before
+      content: ''
+      position: absolute
+      left: -470px
+      bottom: 40%
+      height: 10px
+      width: 470px
+      background: url(../img/fade-left.svg) center no-repeat 
+    &::after
+      content: ''
+      position: absolute
+      right: -470px
+      bottom: 40%
+      height: 10px
+      width: 470px
+      background: url(../img/fade-right.svg) center no-repeat 
     &--bordered
       border: 2px solid $mainBlack
       font-size: 1.74rem
       font-weight: normal
-      // &::before
-      //   content: ''
-      //   position: absolute
-      //   right: 0rem
-      //   // bottom: 50%
-      //   height: 2px
-      //   width: 322px
-      //   // width: 50%
-      //   background: url(../img/fade-right-black.svg) center no-repeat 
+      &::before
+        content: ''
+        position: absolute
+        left: -322px
+        bottom: 50%
+        height: 2px
+        width: 322px
+        background: url(../img/fade-left-black.svg) center no-repeat 
+      &::after
+        content: ''
+        position: absolute
+        right: -322px
+        bottom: 50%
+        height: 2px
+        width: 322px
+        background: url(../img/fade-right-black.svg) center no-repeat 
       i
         font-size: 1.2rem
         padding-left: 0.8rem
     &__bold-word
       font-weight: 700
       font-family: "DIN Pro - Bold", sans-serif
+
+button
+  outline: none
 
 .button
   padding: 12px 27px 13px
@@ -51,6 +82,7 @@
   font-weight: 500
   border: 2px solid $mainBlack
   word-spacing: 0.75rem
+  text-align: center
   &--outline
     background-color: transparent
     color: $mainBlack

@@ -1,4 +1,4 @@
-@media screen and ( min-width: 992px )
+@media screen and ( min-width: 992px ) // HOVER EFFECTS
   .header-partners
     &__link
       &:hover
@@ -30,6 +30,11 @@
     &--outline
       &:hover
         background-color: $mainBlack
+        color: $light
+  .categories
+    &__link
+      &:hover
+        background-color: $orange
         color: $light
 @media screen and ( max-width: 1200px )
   html
@@ -73,6 +78,11 @@
   .approved
     &__card
       margin-bottom: 3rem
+  .categories
+    &__row
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content: space-around
 @media screen and ( max-width: 870px )
   .header-partners
     &__links
