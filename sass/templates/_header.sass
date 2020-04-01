@@ -42,24 +42,25 @@
     position: absolute
     content: ''
     height: 2px
-    width: 30px
+    width: 17px
     background-color: lighten($mainBlack, 25%)
     top: calc( 50% - 1px )
+    left: calc( 50% - 9px )
     &::before
       position: absolute
       content: ''
       height: 2px
-      width: 30px
+      width: 17px
       background-color: lighten($mainBlack, 25%)
-      top: calc( 50% - 8px )
+      top: calc( 50% - 6px )
       transition: 0.5s
     &::after
       position: absolute
       content: ''
       height: 2px
-      width: 30px
+      width: 17px
       background-color: lighten($mainBlack, 25%)
-      top: calc( 50% + 6px )
+      top: calc( 50% + 4px )
       transition: 0.5s
     &--active
       height: 0
@@ -74,6 +75,10 @@
       display: none
       height: 30px
       width: 30px
+      border: solid 2px lighten($mainBlack, 25%)
+      border-radius: 50%
+      background-color: $light
+      box-shadow: 0 0 7px rgba(0,0,0,0.5)
 .menu
   &__row
     display: flex
@@ -180,6 +185,8 @@
     position: relative
     z-index: 4
     transition: 0.9s
+    background-color: $light
+    box-shadow: 0 0 8px rgba(0,0,0,0.5)
     &--active
       transform: translateY(220px)
       transition: 0.9s
