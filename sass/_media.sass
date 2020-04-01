@@ -107,16 +107,25 @@
       margin-left: 0
       margin: auto
       overflow-x: hidden
+      // padding-bottom: 10rem
+      flex-direction: column-reverse
       &-text
         margin-left: 0
         margin-right: -5rem
         align-self: flex-start
         margin-top: 3rem
+        // margin-bottom: -8rem
       &-description
         width: 12.8rem
     &__button
       &::after
         display: none
+      &-next
+        left: 70%
+        bottom: 45px
+      &-prev
+        left: calc( 70% - 50px )
+        bottom: 45px
     &__social
       bottom: auto
       top: 30px
@@ -191,8 +200,9 @@
       margin-left: 20px
   .menu
     &__nav
-      display: flex
+      // display: flex
       flex-direction: column
+      display: none
       right: -56px
       top: 0
       width: 40%
@@ -206,6 +216,7 @@
       &--active
         transform: translateX(0)
         transition: 0.7s
+        display: flex
     &__item
       width: 100%
       text-align: center
@@ -259,9 +270,9 @@
     &__title
       font-size: 1.8rem
       max-width: 25rem
-    &__button
-      &-prev, &-next
-        bottom: 70px
+    // &__button
+    //   &-prev, &-next
+    //     bottom: 70px
   .approved
     &__card
       padding-right: 7%
