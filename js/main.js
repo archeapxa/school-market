@@ -6,6 +6,23 @@ $(document).ready(function () {
     $('.header-partners__links').toggleClass('header-partners__links--active');
 
   });
+// скрытие меню при клике вне его
+	$(document).mouseup(function (e){ // событие клика по веб-документу
+		var div = $(".header-partners__links"); // тут указываем ID элемента
+		if (div.is(e.target) // если клик был не по нашему блоку
+		    && div.has(e.target).length === 0) { // и не по его дочерним элементам
+          $('.header-partners__burger').removeClass('header-partners__burger--active');
+          $('.header-partners__links').removeClass('header-partners__links--active'); // скрываем его
+		}
+	});
+
+
+  $('.menu__burger').on('click', function(e) {
+    e.preventDefault;
+    $('.menu__burger-inside').toggleClass('menu__burger-inside--active');
+    // $('.header-partners__links').toggleClass('header-partners__links--active');
+
+  });
 
 
 
