@@ -58,6 +58,21 @@
       &:hover
         .platforms__item-name
           color: $orange
+  .footer
+    &__social
+      &-link
+        &:hover
+          color: $mainBlack
+    &__list-link
+      &:hover
+        color: $mainBlack
+    &__tel
+      &:hover
+        text-decoration: underline
+  .footer-copyright
+    &__error
+      &:hover
+        color: $light
 @media screen and ( max-width: 1200px )
   html
     font-size: 12px
@@ -159,6 +174,16 @@
       // width: 50%
       img
         object-fit: cover
+  .footer
+    &__col
+      &:nth-of-type(1)
+        flex-basis: 48%
+      &:nth-of-type(2)
+        display: none
+      &:nth-of-type(3)
+        display: none
+      &:nth-of-type(4)
+        flex-basis: 48%
 @media screen and ( max-width: 576px )
   .hero
     &__title
@@ -180,4 +205,12 @@
       align-self: center
     &__item-name
       align-self: center
+  .footer
+    &__col
+      &:nth-of-type(1)
+        display: none
+      &:nth-of-type(4)
+        flex-basis: 90%
+        align-items: center
+        
 

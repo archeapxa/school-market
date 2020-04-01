@@ -1,0 +1,94 @@
+.footer
+  padding-top: 2.5rem
+  padding-bottom: 3rem
+  &__row
+    display: flex
+    justify-content: space-between
+    align-items: stretch
+  &__col
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    height: auto
+    &:last-child
+      align-items: flex-end
+      justify-content: space-between
+  &__header
+    max-width: 15rem
+    margin-bottom: 0.5rem
+    font-size: 1.31rem
+    font-weight: 400
+    line-height: 1.714rem
+    &-strong
+      font-family: "DIN Pro - Bold", sans-serif
+      font-weight: 700
+  &__text
+    max-width: 20rem
+    margin-bottom: 2.6rem
+    font-size: 1.02rem
+    font-weight: normal
+    line-height: 1.29rem
+  &__social
+    display: flex
+    justify-content: space-between
+    max-width: 7.43rem
+    width: 100%
+    &-link
+      color: $disabled
+  &__app-header
+    margin-top: 1.4rem
+    margin-bottom: 2rem
+    font-size: 1.31rem
+    font-weight: normal
+  &__apple, &__google-play
+    max-width: 12.5rem
+    margin-bottom: 0rem
+    margin-top: 0
+  &__button
+    margin-top: 1.4rem
+    text-decoration: none
+    padding: 12px 31px 13px
+  &__about-list
+    list-style: none
+    padding-left: 0rem
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    height: 100%
+    margin-bottom: 0.2rem
+    margin-top: 1.5rem
+  &__list
+    &-item
+      font-size: 0.857rem
+      text-transform: uppercase
+    &-link
+      color: darken($disabled, 20%)
+      text-decoration: none
+      font-weight: 600
+  &__logo
+    margin-top: 1.65rem
+    margin-bottom: 1.7rem
+  &__tel
+    font-size: 1.74rem
+    text-decoration: none
+    color: $mainBlack
+  &__mail
+    margin-top: 0.7rem
+    margin-bottom: auto
+    text-decoration: none
+    color: darken($disabled, 15%)
+    font-size: 1.17rem
+  &__credit-carts
+    margin-top: 2rem
+    margin-bottom: 0.15rem
+      
+.footer-copyright
+  background-color: $mainBlack
+  padding-top: 1.4rem
+  padding-bottom: 1.4rem
+  &__text
+    color: $light
+    font-size: 1rem
+    font-weight: 300
+  &__error
+    color: lighten($mainBlack, 40% )
