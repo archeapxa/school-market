@@ -2,7 +2,6 @@
   border-bottom: 1px solid $darkGrey
   padding-bottom: 0.3rem
   padding-top: 6px
-
   &__row
     display: flex
     justify-content: flex-start
@@ -80,6 +79,7 @@
     display: flex
     justify-content: space-between
     align-items: center
+    position: relative
   &__logo
     padding-top: 1.1rem
     padding-right: 2rem
@@ -140,5 +140,60 @@
         position: absolute
         bottom: calc( 40% - 8px )
         right: calc( 50% - 5px )
+  &__burger
+    display: none
+    margin-left: auto
+    height: 40px
+    width: 40px
+    border: 3px solid lighten($mainBlack, 20%)
+    border-radius: 50%
+    margin-top: 1rem
+    position: relative
+    z-index: 4
+    transition: 0.9s
+    &--active
+      transform: translateY(220px)
+      transition: 0.9s
+      border: 3px solid $orange
+    &-inside
+      content: ''
+      position: absolute
+      height: 3px
+      width: 20px
+      border-radius: 4px
+      top: calc( 50% - 1.5px )
+      left: calc(50% - 10px)
+      background-color: lighten($mainBlack, 20%)
+      transition: 0.5s
+      &::before
+        content: ''
+        position: absolute
+        height: 3px
+        width: 20px
+        border-radius: 4px
+        transform: translateY(-6px)
+        background-color: lighten($mainBlack, 20%) 
+      &::after
+        content: ''
+        position: absolute
+        height: 3px
+        width: 20px
+        border-radius: 4px
+        transform: translateY(6px)
+        background-color: lighten($mainBlack, 20%)     
+      &--active
+        height: 0
+        width: 12px
+        left: calc( 50% - 4px )
+        transform-origin: left center
+        background-color: $orange
+        &::before
+          transform: rotate(-45deg) translateY(-6px) 
+          width: 12px
+          background-color: $orange
+        &::after
+          transform: rotate(45deg) translateY(6px) 
+          width: 12px   
+          background-color: $orange       
 .header__icon
   padding-left: 0.25rem

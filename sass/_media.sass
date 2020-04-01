@@ -191,9 +191,38 @@
       margin-left: 20px
   .menu
     &__nav
+      display: flex
+      flex-direction: column
+      right: -56px
+      top: 0
+      width: 40%
+      min-width: 190px
+      position: absolute
+      background-color: lighten($mainBlack, 25%)
+      z-index: 3
+      border-radius: 5px
+      transition: 0.7s
+      transform: translateX(110%)
+      &--active
+        transform: translateX(0)
+        transition: 0.7s
+    &__item
+      width: 100%
+      text-align: center
+      border-bottom: 1px solid $light
+      color: $light
+      &:hover
+        background-color: $orange
+      &:nth-of-type(6)        
+        border-bottom: none
+    &__search
       display: none
     &__flag
       display: none
+    &__burger
+      display: block
+      &--active
+        transform:
 @media screen and ( max-width: 767px )
   .timer
     font-size: 6px

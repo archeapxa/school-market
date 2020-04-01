@@ -4,27 +4,37 @@ $(document).ready(function () {
     e.preventDefault;
     $('.header-partners__burger').toggleClass('header-partners__burger--active');
     $('.header-partners__links').toggleClass('header-partners__links--active');
-
   });
-// скрытие меню при клике вне его
-	$(document).mouseup(function (e){ // событие клика по веб-документу
-		var div = $(".header-partners__links"); // тут указываем ID элемента
-		if (div.is(e.target) // если клик был не по нашему блоку
-		    && div.has(e.target).length === 0) { // и не по его дочерним элементам
-          $('.header-partners__burger').removeClass('header-partners__burger--active');
-          $('.header-partners__links').removeClass('header-partners__links--active'); // скрываем его
-		}
-	});
+
+
+// // скрытие меню при клике вне его
+// 	$(document).mouseup(function (e){ // событие клика по веб-документу
+// 		var div = $(".header-partners__links"); // тут указываем ID элемента
+// 		if (!div.is(e.target) // если клик был не по нашему блоку
+// 		    && div.has(e.target).length === 0) { // и не по его дочерним элементам
+//           $('.header-partners__burger').removeClass('header-partners__burger--active');
+//           $('.header-partners__links').removeClass('header-partners__links--active'); // скрываем его
+// 		}
+// 	});
 
 
   $('.menu__burger').on('click', function(e) {
     e.preventDefault;
     $('.menu__burger-inside').toggleClass('menu__burger-inside--active');
-    // $('.header-partners__links').toggleClass('header-partners__links--active');
-
+    $('.menu__nav').toggleClass('menu__nav--active');
+    $('.menu__burger').toggleClass('menu__burger--active');
   });
 
-
+// // скрытие меню при клике вне его
+// $(document).mouseup(function (e){ // событие клика по веб-документу
+//   var div2 = $(".menu__nav"); // тут указываем ID элемента
+//   if (!div2.is(e.target) // если клик был не по нашему блоку
+//       && div2.has(e.target).length === 0) { // и не по его дочерним элементам
+//         $('.menu__burger-inside').removelass('menu__burger-inside--active');
+//         $('.menu__nav').removeClass('menu__nav--active');
+//         $('.menu__burger').removeClass('menu__burger--active'); // скрываем его
+//   }
+// });
 
   var mySwiper = new Swiper ('.hero__swiper', {
     // Navigation arrows

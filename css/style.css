@@ -718,7 +718,8 @@ button {
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  position: relative; }
 
 .menu__logo {
   padding-top: 1.1rem;
@@ -800,6 +801,83 @@ button {
     bottom: calc( 40% - 8px);
     right: -webkit-calc( 50% - 5px);
     right: calc( 50% - 5px); }
+
+.menu__burger {
+  display: none;
+  margin-left: auto;
+  height: 40px;
+  width: 40px;
+  border: 3px solid #535353;
+  border-radius: 50%;
+  margin-top: 1rem;
+  position: relative;
+  z-index: 4;
+  -webkit-transition: 0.9s;
+  -o-transition: 0.9s;
+  transition: 0.9s; }
+  .menu__burger--active {
+    -webkit-transform: translateY(220px);
+        -ms-transform: translateY(220px);
+            transform: translateY(220px);
+    -webkit-transition: 0.9s;
+    -o-transition: 0.9s;
+    transition: 0.9s;
+    border: 3px solid #f47920; }
+  .menu__burger-inside {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 20px;
+    border-radius: 4px;
+    top: -webkit-calc( 50% - 1.5px);
+    top: calc( 50% - 1.5px);
+    left: -webkit-calc(50% - 10px);
+    left: calc(50% - 10px);
+    background-color: #535353;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s; }
+    .menu__burger-inside::before {
+      content: '';
+      position: absolute;
+      height: 3px;
+      width: 20px;
+      border-radius: 4px;
+      -webkit-transform: translateY(-6px);
+          -ms-transform: translateY(-6px);
+              transform: translateY(-6px);
+      background-color: #535353; }
+    .menu__burger-inside::after {
+      content: '';
+      position: absolute;
+      height: 3px;
+      width: 20px;
+      border-radius: 4px;
+      -webkit-transform: translateY(6px);
+          -ms-transform: translateY(6px);
+              transform: translateY(6px);
+      background-color: #535353; }
+    .menu__burger-inside--active {
+      height: 0;
+      width: 12px;
+      left: -webkit-calc( 50% - 4px);
+      left: calc( 50% - 4px);
+      -webkit-transform-origin: left center;
+          -ms-transform-origin: left center;
+              transform-origin: left center;
+      background-color: #f47920; }
+      .menu__burger-inside--active::before {
+        -webkit-transform: rotate(-45deg) translateY(-6px);
+            -ms-transform: rotate(-45deg) translateY(-6px);
+                transform: rotate(-45deg) translateY(-6px);
+        width: 12px;
+        background-color: #f47920; }
+      .menu__burger-inside--active::after {
+        -webkit-transform: rotate(45deg) translateY(6px);
+            -ms-transform: rotate(45deg) translateY(6px);
+                transform: rotate(45deg) translateY(6px);
+        width: 12px;
+        background-color: #f47920; }
 
 .header__icon {
   padding-left: 0.25rem; }
@@ -1561,9 +1639,51 @@ button {
   .header-partners__login {
     margin-left: 20px; }
   .menu__nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    right: -56px;
+    top: 0;
+    width: 40%;
+    min-width: 190px;
+    position: absolute;
+    background-color: #606060;
+    z-index: 3;
+    border-radius: 5px;
+    -webkit-transition: 0.7s;
+    -o-transition: 0.7s;
+    transition: 0.7s;
+    -webkit-transform: translateX(110%);
+        -ms-transform: translateX(110%);
+            transform: translateX(110%); }
+    .menu__nav--active {
+      -webkit-transform: translateX(0);
+          -ms-transform: translateX(0);
+              transform: translateX(0);
+      -webkit-transition: 0.7s;
+      -o-transition: 0.7s;
+      transition: 0.7s; }
+  .menu__item {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #ffffff;
+    color: #ffffff; }
+    .menu__item:hover {
+      background-color: #f47920; }
+    .menu__item:nth-of-type(6) {
+      border-bottom: none; }
+  .menu__search {
     display: none; }
   .menu__flag {
-    display: none; } }
+    display: none; }
+  .menu__burger {
+    display: block; } }
 
 @media screen and (max-width: 767px) {
   .timer {
