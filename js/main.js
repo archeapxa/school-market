@@ -51,6 +51,9 @@ $(document).ready(function () {
     }
   });
 
+  $('.categories__more').on('click', function() {
+    $('.categories__hidden').stop().fadeToggle(500);
+  });
 
   // $('.menu__item-dropdown').hover(
   //   function () {

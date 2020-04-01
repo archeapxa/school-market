@@ -1092,6 +1092,10 @@ button {
   padding-top: 1rem;
   padding-bottom: 3rem;
   background-color: #ffffff; }
+  .categories__row {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
   .categories__section-title {
     margin-bottom: 0.6rem; }
   .categories__link {
@@ -1114,7 +1118,9 @@ button {
     color: #202020;
     text-decoration: none;
     font-size: 1.14rem;
-    margin-bottom: 2.7rem; }
+    margin-bottom: 2.7rem;
+    margin-left: 5px;
+    margin-right: 5px; }
   .categories__more {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1124,6 +1130,8 @@ button {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center; }
+  .categories__hidden {
+    display: none; }
 
 .popular {
   padding-top: 1.25rem;
