@@ -168,7 +168,7 @@
       padding: 0 0
       background-color: lighten($mainBlack, 25%)
       border-radius: 2px
-      z-index: 4
+      z-index: 12
       &--active
         display: flex
         transform: scaleY(1)
@@ -223,6 +223,10 @@
       display: block
       &--active
         transform:
+    &__dropdown
+      &-list
+        right: 70%
+        top: 0
 @media screen and ( max-width: 767px )
   .timer
     font-size: 6px
@@ -279,4 +283,3 @@
         flex-basis: 90%
         align-items: center
         
-

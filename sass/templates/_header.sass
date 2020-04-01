@@ -98,8 +98,37 @@
     color: black
     font-weight: 500
     font-family: "DIN Pro - Medium", sans-serif
+    position: relative
+    &-dropdown
   &__search
     color: $orange
+  &__dropdown
+    &-list
+      display: list-item
+      visibility: hidden
+      position: absolute
+      top: 70%
+      list-style: none
+      padding: 0
+      margin: 0
+      width: 15.7rem
+      color: $mainBlack
+      text-align: end
+      z-index: 10
+    &-item
+      background-color: #fff
+      padding: 5px
+      &:hover
+        background-color: darken(#fff, 5%)
+      &:hover .menu__dropdown-link
+        color: $orange
+        text-decoration: underline
+    &-link
+      text-decoration: none
+      color: $mainBlack
+      font-size: 1.1rem
+      font-family: "DIN Pro - Bold"
+      font-weight: 300
   &__flag
     position: relative
     &--empty

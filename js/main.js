@@ -36,6 +36,33 @@ $(document).ready(function () {
 //   }
 // });
 
+  $('.menu__item-dropdown').on('click', function() {
+    // alert('Вы поместили курсор в зону элемента foo.');
+    // e.preventDefault;
+    $('.menu__dropdown-list').css('visibility', 'visible');
+  });
+
+  // скрытие меню при клике вне его
+  $(document).mouseup(function (e){ // событие клика по веб-документу
+    var div2 = $(".menu__item-dropdown"); // тут указываем ID элемента
+    if (!div2.is(e.target) // если клик был не по нашему блоку
+        && div2.has(e.target).length === 0) { // и не по его дочерним элементам
+          $('.menu__dropdown-list').css('visibility', 'hidden') // скрываем его
+    }
+  });
+
+
+  // $('.menu__item-dropdown').hover(
+  //   function () {
+  //     $('.menu__dropdown-list').css('visibility', 'visible');
+  //   }, 
+  //   function () {
+  //     $('.menu__dropdown-list').css('visibility', 'hidden');            
+  //   }
+  // );
+  
+
+
   var mySwiper = new Swiper ('.hero__swiper', {
     // Navigation arrows
     navigation: {
