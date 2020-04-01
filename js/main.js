@@ -1,5 +1,14 @@
 $(document).ready(function () {
 
+  $('.header-partners__burger-link').on('click', function(e) {
+    e.preventDefault;
+    $('.header-partners__burger').toggleClass('header-partners__burger--active');
+    $('.header-partners__links').toggleClass('header-partners__links--active');
+
+  });
+
+
+
   var mySwiper = new Swiper ('.hero__swiper', {
     // Navigation arrows
     navigation: {

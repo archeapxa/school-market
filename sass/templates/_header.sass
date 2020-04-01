@@ -2,15 +2,20 @@
   border-bottom: 1px solid $darkGrey
   padding-bottom: 0.3rem
   padding-top: 6px
+
   &__row
     display: flex
     justify-content: flex-start
     align-items: center
+    position: relative
   &__logo-small
     padding-right: 14px
     cursor: pointer
   &__links
     // padding-top: 2px
+    &--active
+      display: flex
+      opacity: 1
   &__link
     border-right: 2px solid $darkGrey
     padding: 0 1.4rem 0 1.15rem
@@ -34,6 +39,42 @@
     &-icon
       opacity: 0.3
       padding-left: 0.25rem
+  &__burger
+    position: absolute
+    content: ''
+    height: 2px
+    width: 30px
+    background-color: lighten($mainBlack, 25%)
+    top: calc( 50% - 1px )
+    &::before
+      position: absolute
+      content: ''
+      height: 2px
+      width: 30px
+      background-color: lighten($mainBlack, 25%)
+      top: calc( 50% - 8px )
+      transition: 0.5s
+    &::after
+      position: absolute
+      content: ''
+      height: 2px
+      width: 30px
+      background-color: lighten($mainBlack, 25%)
+      top: calc( 50% + 6px )
+      transition: 0.5s
+    &--active
+      height: 0
+      &::before
+        transform: rotate(45deg)
+        top: 50%
+      &::after
+        transform: rotate(-45deg)
+        top: 50%
+    &-link
+      position: relative
+      display: none
+      height: 30px
+      width: 30px
 .menu
   &__row
     display: flex

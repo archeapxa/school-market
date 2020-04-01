@@ -150,12 +150,49 @@
       font-size: 1.8rem
 @media screen and ( max-width: 870px )
   .header-partners
+    &__burger
+      &-link
+        margin-left: auto
+        display: inline-block
     &__links
+      transform-origin: top center
+      transform: scaleY(0)
+      position: absolute
+      opacity: 0
+      visibility: hidden
       display: none
+      display: flex
+      top: 38px
+      right: 0px
+      flex-direction: column
+      padding: 0 0
+      background-color: lighten($mainBlack, 25%)
+      border-radius: 2px
+      z-index: 4
+      &--active
+        display: flex
+        transform: scaleY(1)
+        visibility: visible
+        opacity: 1
+        transition: 0.5s
+    &__link
+      border: 0
+      padding: 10px 15px
+      background-color: lighten($mainBlack, 25%)
+      border-top: 1px solid $light
+      color: $light
+      opacity: 1
+      font-size: 1.2rem
+      &:hover
+        background-color: $orange
     &__android-icon
       display: none
+    &__login
+      margin-left: 10px
   .menu
     &__nav
+      display: none
+    &__flag
       display: none
 @media screen and ( max-width: 767px )
   .timer
