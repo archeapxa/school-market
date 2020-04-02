@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+  //бургер меню в хедере партнеров
   $('.header-partners__burger-link').on('click', function(e) {
     e.preventDefault;
     $('.header-partners__burger').toggleClass('header-partners__burger--active');
@@ -20,7 +21,7 @@ $(document).ready(function () {
 		}
 	});
 
-
+//бургер меню в навигации
   $('.menu__burger').on('click', function(e) {
     e.preventDefault;
     $('.menu__burger-inside').toggleClass('menu__burger-inside--active');
@@ -43,6 +44,7 @@ $(document).ready(function () {
 		}
 	});
 
+  //выпадающий список каталогов
   $('.menu__item-dropdown').on('click', function() {
     // alert('Вы поместили курсор в зону элемента foo.');
     // e.preventDefault;
@@ -58,19 +60,38 @@ $(document).ready(function () {
     }
   });
 
+  //разворот блока категорий
   $('.categories__more').on('click', function() {
     $('.categories__hidden').stop().fadeToggle(500);
   });
 
-  // $('.menu__item-dropdown').hover(
-  //   function () {
-  //     $('.menu__dropdown-list').css('visibility', 'visible');
-  //   }, 
-  //   function () {
-  //     $('.menu__dropdown-list').css('visibility', 'hidden');            
-  //   }
-  // );
-  
+
+  //модалка входа на сайт
+  $('.header-partners__login').on('click', function(e) {
+    e.preventDefault;
+    $('.popup').addClass('popup--active');
+  });
+
+  $('.popup__close').on('click', function(e) {
+    e.preventDefault;
+    $('.popup').removeClass('popup--active');
+  }); 
+
+  // скрытие попапа при клике вне его
+  $(document).mouseup(function (e){ // событие клика по веб-документу
+    var popup = $(".popup__dialog"); // тут указываем ID элемента
+    if (!popup.is(e.target) // если клик был не по нашему блоку
+        && popup.has(e.target).length === 0) { // и не по его дочерним элементам
+          $('.popup').removeClass('popup--active'); // скрываем его
+    }
+  });
+
+  $(document).keydown(function (eventObject) { //закрытие окна по esc. Еще одна копипаста
+    if (eventObject.which == 27) { // нажата клавиша Esc
+      $('.popup').removeClass('popup--active');
+      // ваша функция закрытия окна
+    };
+  });
 
 
   var mySwiper = new Swiper ('.hero__swiper', {
