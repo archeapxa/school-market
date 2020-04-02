@@ -449,7 +449,8 @@ button {
   font-weight: 500;
   border: 2px solid #202020;
   text-align: center;
-  text-decoration: none; }
+  text-decoration: none;
+  cursor: pointer; }
   .button--outline {
     background-color: transparent;
     color: #202020; }
