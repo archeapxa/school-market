@@ -1124,7 +1124,8 @@ input.invalid {
     margin-left: 0.07rem;
     font-size: 1.3rem;
     border: none;
-    cursor: pointer; }
+    cursor: pointer;
+    text-decoration: none; }
     .hero__button-icon {
       font-size: 1rem;
       padding-left: 0.65rem; }
