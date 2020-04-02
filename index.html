@@ -857,12 +857,16 @@
   </footer>
 
   <div class="popup">
-    <form action="" class="popup__dialog">
+    <form action="sendModal.php" method="POST" class="popup__dialog" id="login">
       <h4 class="popup__title">Войти в профиль</h4>
-      <label for="loginName">Логин</label>
-      <input id="loginName" placeholder="Ваш логин" type="text">
-      <label for="loginPassword">Пароль</label>
-      <input id="loginPassword" placeholder="Ваш пароль" type="password">
+      <div class="popup__input-group">      
+        <label class="popup__input" for="loginName">Логин</label>
+        <input id="loginName" placeholder="Ваш логин" type="text" name="loginName">
+      </div>
+      <div class="popup__input-group">
+        <label for="loginPassword">Пароль</label>
+        <input class="popup__input" id="loginPassword" placeholder="Ваш пароль" type="password" name="loginPassword">
+      </div>
       <input class="popup__submit" value="Войти" type="submit">
       <button class="popup__close"></button>
     </form>
@@ -874,6 +878,7 @@
   <script type="text/javascript"
     src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.4/moment-timezone-with-data.js"></script>
   <script src="js/swiper.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 

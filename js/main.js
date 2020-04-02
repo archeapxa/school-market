@@ -75,6 +75,9 @@ $(document).ready(function () {
   $('.popup__close').on('click', function(e) {
     e.preventDefault;
     $('.popup').removeClass('popup--active');
+    $('#loginName').val('').removeClass('invalid');
+    $('#loginPassword').val('').removeClass('invalid');
+    $('#login').find("div.invalid").css('display', 'none');
   }); 
 
   // скрытие попапа при клике вне его
@@ -82,14 +85,19 @@ $(document).ready(function () {
     var popup = $(".popup__dialog"); // тут указываем ID элемента
     if (!popup.is(e.target) // если клик был не по нашему блоку
         && popup.has(e.target).length === 0) { // и не по его дочерним элементам
-          $('.popup').removeClass('popup--active'); // скрываем его
+          $('.popup').removeClass('popup--active');
+          $('#loginName').val('').removeClass('invalid');
+          $('#loginPassword').val('').removeClass('invalid');
+          $('#login').find("div.invalid").css('display', 'none'); // скрываем его
     }
   });
 
   $(document).keydown(function (eventObject) { //закрытие окна по esc. Еще одна копипаста
     if (eventObject.which == 27) { // нажата клавиша Esc
       $('.popup').removeClass('popup--active');
-      // ваша функция закрытия окна
+      $('#loginName').val('').removeClass('invalid');
+      $('#loginPassword').val('').removeClass('invalid');
+      $('#login').find("div.invalid").css('display', 'none');
     };
   });
 
@@ -181,5 +189,51 @@ function endEvent($el, newText, hideEl){
   hideEl.hide();
 }
 timer();
+
+// validation
+  $("#login").validate({
+    errorClass: 'invalid',
+    errorElement: 'div',
+    rules: {
+      loginName: {
+        required: true,
+        minlength: 3,
+      },
+      loginPassword: {
+        required: true,
+        minlength: 3,
+      }
+    },
+    messages: {
+      loginName: {
+        required: "Заполните поле",
+        minlength: "Не меньше 3 символов"
+      },
+      loginPassword: {
+        required: "Заполните поле",
+        minlength: "Не меньше 3 символов"
+      },
+    },
+    submitHandler: function (form) {
+      $.ajax({
+        type: 'POST',
+        url: "sendModal.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          $(form)[0].reset();
+          $('.popup__input-group').css('display', 'none');
+          $('.popup__submit').css('display', 'none');
+          $('.popup__title').css('font-size', '2rem');
+          $('.popup__dialog').css('justify-content', 'center');
+          $('.popup__title').html('Cпасибо!');
+        },
+        error: function (response) {
+          console.error('Ошибка запроса ' + response);
+        }
+      })
+    }
+  });
+
+
 
 })

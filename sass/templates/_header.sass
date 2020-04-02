@@ -253,26 +253,28 @@
     left: calc( 50% - 125px )
     z-index: 20
     width: 250px
+    min-height: 250px
     padding: 30px 20px
     background-color: $mainBlack
     color: $light
     border-radius: 2px
     box-shadow: 0 0 10px rgba(0,0,0,0.5)
     transition: 0.5s all
-
     label
       font-family: "DIN Pro - Light"
       font-size: 1rem
       font-weight: 500
       color: darken($light, 15%)
-      margin-bottom: 5px
+      margin-bottom: 0
+      position: relative
     input
       border: none
       border-bottom: 1px solid darken($light, 15%)
       background-color: transparent
       color: $light
-      margin-bottom: 20px
+      margin-top: 0
       outline: none
+      position: relative
       &:last-of-type
         background-color: $grey
         color: $mainBlack
@@ -285,6 +287,11 @@
     margin: 0
     margin-bottom: 1.5rem
     text-align: center
+  &__input-group
+    display: flex
+    flex-direction: column
+    margin: 0 0 20px 0
+    position: relative
   &__close
     position: absolute
     top: 5px
