@@ -1,16 +1,20 @@
 .catalog
   background-color: $light
-  padding-top: 2rem
+  padding-top: 3.9rem
+  &__row
+    align-items: flex-start
   &__path
     margin-right: auto
   &__to-main
     text-decoration: none
     color: $mainBlack
     border-right: 1px solid $disabled
-    padding-right: 10px
+    padding-right: 14px
+    font-size: 1.1rem
   &__current-page
     color: darken($disabled, 15%)
-    padding-left: 8px
+    padding-left: 10px
+    font-size: 1.1rem
   &__sort
     display: flex
     flex-direction: column
@@ -24,7 +28,7 @@
       color: lighten($mainBlack, 35%)
       font-family: "DIN Pro - Medium", sans-serif
   &__title
-    font-size: 1.71rem
+    font-size: 1.69rem
     font-weight: 300
     display: block
     max-width: 320px
@@ -32,6 +36,7 @@
     margin-bottom: 0
     padding-bottom: 20px
     border-bottom: 1px solid $disabled
+    margin-top: 16px
   &__categories
     padding-top: 30px
     display: flex
@@ -39,12 +44,12 @@
     align-items: flex-start
     &-button
       width: 100%
-      padding: 16px 16px
+      padding: 19px 20px
       background-color: $grey
       color: $mainBlack
       text-decoration: none
       border-radius: 5px
-      margin-bottom: 10px
+      margin-bottom: 15px
       font-size: 16px
       font-weight: 400
       font-family: "DIN Pro - Medium", sans-serif
@@ -63,10 +68,18 @@
       text-decoration: none
       font-size: 1.14rem
       font-family: "DIN Pro - Medium", sans-serif
-      margin-bottom: 1.14rem
+      margin-bottom: 1.285rem
       &:hover
         color: $orange
         text-decoration: underline
+  &__items-row
+    align-items: flex-start
+    flex-wrap: wrap
+  &__card
+    margin-bottom: 3.9rem
+    .card__info-container
+      // padding-top: 7.2%
+      margin-top: 1rem
 
 
 
@@ -81,7 +94,7 @@
     // justify-content: space-between
     align-items: center
     border: solid 1px $disabled
-    padding: 16px
+    padding: 14px 19px
     cursor: pointer
     &:hover
       background-color: $grey
