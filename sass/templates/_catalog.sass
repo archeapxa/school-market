@@ -1,6 +1,7 @@
 .catalog
   background-color: $light
   padding-top: 3.9rem
+  padding-bottom: 4px
   &__row
     align-items: flex-start
   &__path
@@ -133,3 +134,37 @@
 .select-number--active
   .select-sort-number__body
     display: block
+
+.paging
+  display: flex
+  flex-direction: column
+  align-items: center
+  margin-top: -1.45rem
+  &__text
+    font-size: 1.15rem
+    color: lighten($mainBlack, 40%)
+  &__buttons
+    margin-top: 2.2rem
+  &__page
+    color: $mainBlack
+    border: 2px solid $mainBlack
+    cursor: pointer
+    background-color: transparent
+    height: 3.214rem
+    width: 3.214rem
+    text-align: center
+    margin-right: 6.5px
+    &:hover
+      color: $orange
+      border-color: $orange
+    &:last-of-type
+      margin-right: 0
+    &--disabled
+      background-color: lighten($mainBlack, 70%)
+      border-color: lighten($mainBlack, 70%)
+      cursor: default
+    &--full
+      background-color: $orange
+      color: $light
+      border-color: $orange
+    

@@ -73,6 +73,20 @@
     &__error
       &:hover
         color: $light
+  .paging
+    &__page
+      &:hover
+        color: $orange
+        border-color: $orange
+      &--disabled
+        &:hover
+          color: inherit
+          border-color: lighten($mainBlack, 70%)
+      &--full
+        &:hover
+          color: $light
+          background-color: darken($orange, 8%)
+          border-color: darken($orange, 8%)
 @media screen and ( max-width: 1200px )
   html
     font-size: 12px

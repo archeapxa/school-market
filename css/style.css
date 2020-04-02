@@ -1070,6 +1070,9 @@ input.invalid {
     visibility: visible;
     opacity: 1; }
 
+.header--light {
+  background-color: #ffffff; }
+
 .hero {
   padding-top: 1.7rem;
   padding-bottom: 0;
@@ -1511,7 +1514,8 @@ input.invalid {
 
 .catalog {
   background-color: #ffffff;
-  padding-top: 3.9rem; }
+  padding-top: 3.9rem;
+  padding-bottom: 4px; }
   .catalog__row {
     -webkit-box-align: start;
     -webkit-align-items: flex-start;
@@ -1686,9 +1690,52 @@ input.invalid {
 .select-number--active .select-sort-number__body {
   display: block; }
 
+.paging {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -1.45rem; }
+  .paging__text {
+    font-size: 1.15rem;
+    color: #868686; }
+  .paging__buttons {
+    margin-top: 2.2rem; }
+  .paging__page {
+    color: #202020;
+    border: 2px solid #202020;
+    cursor: pointer;
+    background-color: transparent;
+    height: 3.214rem;
+    width: 3.214rem;
+    text-align: center;
+    margin-right: 6.5px; }
+    .paging__page:hover {
+      color: #f47920;
+      border-color: #f47920; }
+    .paging__page:last-of-type {
+      margin-right: 0; }
+    .paging__page--disabled {
+      background-color: lightgray;
+      border-color: lightgray;
+      cursor: default; }
+    .paging__page--full {
+      background-color: #f47920;
+      color: #ffffff;
+      border-color: #f47920; }
+
 .footer {
   padding-top: 2.5rem;
-  padding-bottom: 3rem; }
+  padding-bottom: 4rem; }
   .footer__row {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1865,7 +1912,17 @@ input.invalid {
   .footer__tel:hover {
     text-decoration: underline; }
   .footer-copyright__error:hover {
-    color: #ffffff; } }
+    color: #ffffff; }
+  .paging__page:hover {
+    color: #f47920;
+    border-color: #f47920; }
+  .paging__page--disabled:hover {
+    color: inherit;
+    border-color: lightgray; }
+  .paging__page--full:hover {
+    color: #ffffff;
+    background-color: #e0650b;
+    border-color: #e0650b; } }
 
 @media screen and (max-width: 1200px) {
   html {
