@@ -1,0 +1,122 @@
+.catalog
+  background-color: $light
+  padding-top: 2rem
+  &__path
+    margin-right: auto
+  &__to-main
+    text-decoration: none
+    color: $mainBlack
+    border-right: 1px solid $disabled
+    padding-right: 10px
+  &__current-page
+    color: darken($disabled, 15%)
+    padding-left: 8px
+  &__sort
+    display: flex
+    flex-direction: column
+    margin-left: 30px
+    &-by
+      flex-basis: 23.4%
+    &-number
+      flex-basis: 14.8%
+    &-title
+      margin-bottom: 8px
+      color: lighten($mainBlack, 35%)
+      font-family: "DIN Pro - Medium", sans-serif
+  &__title
+    font-size: 1.71rem
+    font-weight: 300
+    display: block
+    max-width: 320px
+    width: 25%
+    margin-bottom: 0
+    padding-bottom: 20px
+    border-bottom: 1px solid $disabled
+  &__categories
+    padding-top: 30px
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    &-button
+      width: 100%
+      padding: 16px 16px
+      background-color: $grey
+      color: $mainBlack
+      text-decoration: none
+      border-radius: 5px
+      margin-bottom: 10px
+      font-size: 16px
+      font-weight: 400
+      font-family: "DIN Pro - Medium", sans-serif
+      &:hover
+        background-color: $orange
+        color: $light
+        .catalog__categories-icon
+          color: $light
+      &:nth-of-type(2)
+        margin-bottom: 30px
+    &-icon
+      padding-right: 1.5rem
+      color: lighten($mainBlack, 50%)
+    &-link
+      color: $mainBlack
+      text-decoration: none
+      font-size: 1.14rem
+      font-family: "DIN Pro - Medium", sans-serif
+      margin-bottom: 1.14rem
+      &:hover
+        color: $orange
+        text-decoration: underline
+
+
+
+
+.select-sort-by, .select-sort-number
+  margin: 0 auto
+  position: relative
+  width: 100%
+  position: relative
+  &__header
+    display: flex
+    // justify-content: space-between
+    align-items: center
+    border: solid 1px $disabled
+    padding: 16px
+    cursor: pointer
+    &:hover
+      background-color: $grey
+  &__current
+    font-size: 1rem
+    line-height: 100%
+    padding: 0
+    font-family: "DIN Pro - Medium", sans-serif
+  &__icon
+    height: 10px
+    width: 10px
+    display: flex
+    align-items: center
+    justify-content: center
+    text-align: center
+    flex-shrink: 0
+    margin-left: auto
+  &__body
+    border: 1px solid $disabled
+    border-top: none
+    position: absolute
+    display: none
+    left: 0
+    right: 0
+    top: 100%
+    z-index: 10
+    background-color: $grey
+    cursor: pointer
+  &__item
+    padding: 8px 16px
+    &:hover
+      background-color: lighten($disabled, 20%)
+.select-by--active
+  .select-sort-by__body
+    display: block
+.select-number--active
+  .select-sort-number__body
+    display: block

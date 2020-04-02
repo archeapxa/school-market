@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMC Sales project</title>
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header class="header-partners">
+    <div class="container">
+      <div class="header-partners__row">
+        <a href="#"><img class="header-partners__logo-small" src="img/bmc-icon-small.png" alt="icon-small"></a>
+        <div class="header-partners__links">
+          <a href="#" class="header-partners__link">Соц. сети <i class="header__icon fas fa-comment-dots"></i></a>
+          <a href="#" class="header-partners__link">Торгов. сети <i class="header__icon fas fa-cart-plus"></i></a>
+          <a href="#" class="header-partners__link">Туристич. сети <i class="header__icon fas fa-globe"></i></a>
+          <a href="#" class="header-partners__link">Ассоциации <i class="header__icon fas fa-eye"></i></a>
+          <a href="#" class="header-partners__link">Сервисы <i class="header__icon fas fa-wrench"></i></a>
+        </div>
+        <a href="#" class="#"><img class="header-partners__android-icon" src="img/android-logo.svg"
+            alt="android icon"></a>
+        <a class="header-partners__burger-link" href="#"><span class="header-partners__burger"></span></a>
+        <a href="#" class="header-partners__login">Вход на сайт <i
+            class="fas fa-lock header-partners__login-icon"></i></a>
+      </div>
+      <!-- row -->
+    </div>
+    <!-- container -->
+  </header>
+  <!-- header-partners -->
+  <header class="menu">
+    <div class="container">
+      <div class="menu__row">
+        <a href="index.html" class="menu__logo"><img src="img/logo-big.png" alt="logo-big"></a>
+        <nav class="menu__nav">
+          <a href="#" class="menu__item">Объявления</a>
+          <a href="#" class="menu__item menu__item-dropdown">Каталоги <i class="header__icon fas fa-angle-down"></i>
+            <ul class="menu__dropdown-list">
+              <li class="menu__dropdown-item">
+                <a href="catalog.html" class="menu__dropdown-link">Развлечения, досуг</a>
+              </li>
+              <li class="menu__dropdown-item">
+                <a href="catalog.html" class="menu__dropdown-link">Посуда и зеркала</a>
+              </li>
+              <li class="menu__dropdown-item">
+                <a href="catalog.html" class="menu__dropdown-link">Парфюмерия и косметика</a>
+              </li>
+              <li class="menu__dropdown-item">
+                <a href="catalog.html" class="menu__dropdown-link">Оптика</a>
+              </li>
+              <li class="menu__dropdown-item">
+                <a href="catalog.html" class="menu__dropdown-link">Мебель</a>
+              </li>
+              <li class="menu__dropdown-item">
+                <a href="catalog.html" class="menu__dropdown-link">Кож.галантерея</a>
+              </li>
+              <li class="menu__dropdown-item">
+                <a href="catalog.html" class="menu__dropdown-link">Компьютерная техника</a>
+              </li>
+              <li class="menu__dropdown-item">
+                <a href="catalog.html" class="menu__dropdown-link">Канцелярские товары</a>
+              </li>
+              <li class="menu__dropdown-item">
+                <a href="catalog.html" class="menu__dropdown-link">Источники света</a>
+              </li>
+              <li class="menu__dropdown-item">
+                <a href="catalog.html" class="menu__dropdown-link">Инструменты</a>
+              </li>
+              <li class="menu__dropdown-item">
+                <a href="catalog.html" class="menu__dropdown-link">Инструменты</a>
+              </li>
+            </ul>
+          </a>
+          <a href="#" class="menu__item">Участники</a>
+          <a href="#" class="menu__item">Партнеры</a>
+          <a href="#" class="menu__item">О платформе</a>
+          <a href="#" class="menu__item">Новости</a>
+          <a href="#" class="menu__search"><i class="header__icon fas fa-search"></i></a>
+        </nav>
+        <div class="menu__flag menu__flag--empty">
+          <img src="img/flag-empty.svg" alt="flag empty">
+        </div>
+        <div class="menu__flag menu__flag--full">
+          <img src="img/flag-full.svg" alt="flag-full">
+        </div>
+
+        <a href="#" class="menu__burger">
+          <span class="menu__burger-inside"></span>
+        </a>
+      </div>
+      <!-- row -->
+    </div>
+    <!-- /.container -->
+  </header>
+  <!-- menu -->
+
+  <main class="main">
+
+    <section class="section catalog">
+      <div class="container">
+        <div class="catalog__filters">
+          <div class="row">
+            <div class="catalog__path">
+              <a class="catalog__to-main" href="index.html">Главная</a>
+              <a class="catalog__current-page">Каталог</a>
+            </div>
+            <!-- /.catalog__path -->
+
+            <div class="catalog__sort catalog__sort-by">
+              <span class="catalog__sort-title">Сортировать по:</span> 
+              <!-- /.catalog__sort-title -->
+
+              <div class="select-sort-by">
+                <div class="select-sort-by__header">
+                  <span class="select-sort-by__current">Сначала новые</span>
+                  <div class="select-sort-by__icon"><i class="fas fa-angle-down"></i></div>
+                </div>
+
+                <div class="select-sort-by__body">
+                  <div class="select-sort-by__item">Сначала новые</div>
+                  <div class="select-sort-by__item">Сначала старые</div>
+                  <div class="select-sort-by__item">По популярности</div>
+                  <div class="select-sort-by__item">По рейтингу</div>
+                </div>
+              </div>
+              <!-- select -->
+            </div>
+            <!-- catalog sort by -->
+            <div class="catalog__sort catalog__sort-number">
+              <span class="catalog__sort-title">Товаров на стр.:</span> 
+              <!-- title -->
+
+              <div class="select-sort-number">
+                <div class="select-sort-number__header">
+                  <span class="select-sort-number__current">24 на страницу</span>
+                  <div class="select-sort-number__icon"><i class="fas fa-angle-down"></i></div>
+                </div>
+
+                <div class="select-sort-number__body">
+                  <div class="select-sort-number__item">24 на страницу</div>
+                  <div class="select-sort-number__item">16 на страницу</div>
+                  <div class="select-sort-number__item">32 на страницу</div>
+                </div>
+              </div>
+              <!-- select -->
+            </div>
+            <!-- /.catalog__sort catalog_sort-number -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- filters -->
+
+        <h3 class="catalog__title">Категории товаров</h3>
+
+        <div class="row">
+          <div class="col-23-4 catalog__categories">
+            <a href="#" class="catalog__categories-button"><i class="catalog__categories-icon fas fa-tshirt"></i> Одежда</a>            
+            <a href="#" class="catalog__categories-button"><i class="catalog__categories-icon fas fa-shoe-prints"></i> Обувь</a>
+
+            <a href="#" class="catalog__categories-link">Развлечения, досуг</a>
+            <a href="#" class="catalog__categories-link">Посуда и зеркала</a>
+            <a href="#" class="catalog__categories-link">Парфюмерия и косметика</a>
+            <a href="#" class="catalog__categories-link">Оптика</a>
+            <a href="#" class="catalog__categories-link">Мебель</a>
+            <a href="#" class="catalog__categories-link">Компьютерная техника</a>
+            <a href="#" class="catalog__categories-link">Кож.галантерея</a>
+            <a href="#" class="catalog__categories-link">Канцелярские товары</a>
+            <a href="#" class="catalog__categories-link">Источники света</a>
+            <a href="#" class="catalog__categories-link">Инструменты</a>
+            <a href="#" class="catalog__categories-link">Здоровье</a>
+            <a href="#" class="catalog__categories-link">Животные и растения</a>
+            <a href="#" class="catalog__categories-link">Дача и сад</a>
+            <a href="#" class="catalog__categories-link">Бытовая химия</a>
+            <a href="#" class="catalog__categories-link">Сельскохозяйственная продукция и сырье</a>
+            <a href="#" class="catalog__categories-link">Авто</a>
+            <a href="#" class="catalog__categories-link">Очки</a>
+            <a href="#" class="catalog__categories-link">Мобильные телефоны</a>
+            <a href="#" class="catalog__categories-link">Средства личной гигиены</a>
+            <a href="#" class="catalog__categories-link">Строительные материалы</a>
+            <a href="#" class="catalog__categories-link">Сувениры</a>
+            <a href="#" class="catalog__categories-link">Электротовары</a>
+            <a href="#" class="catalog__categories-link">Ювелирные изделия</a>
+            <a href="#" class="catalog__categories-link">Домашний текстиль, ковры</a>
+            <a href="#" class="catalog__categories-link">Туризм и спорт</a>
+            <a href="#" class="catalog__categories-link">Сумки, кошельки</a>
+            <a href="#" class="catalog__categories-link">Разное</a>
+            <a href="#" class="catalog__categories-link">Одежда</a>
+            <a href="#" class="catalog__categories-link">Обувь</a>
+            <a href="#" class="catalog__categories-link">Продукты питания</a>
+            <a href="#" class="catalog__categories-link">Книги</a>
+          </div>
+          <!-- col 23-4 -->
+          <div class="col-73-6"></div>
+          <!-- /.col-73-6 -->
+        </div>
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section catalog -->
+
+    <section class="section platforms">
+      <div class="container">
+        <div class="section-title platforms__section-title">
+          <h3 class="section-header">Сервисы платформы</h3>
+        </div>
+        <!-- /.section-title -->
+
+
+        <div class="swiper-container platforms-swiper swiper-no-swiping">
+          <div class="swiper-wrapper platforms__swiper-wrapper">
+
+            <div class="swiper-slide platforms__slide">
+              <img src="img/platforms/platforms-1.png" alt="platform e-biblio">
+              <a href="http://elib.kdt.kz" class="platforms__item-link">
+                <h5 class="platforms__item-name">Учись с умом с E-Библиотекой</h5>
+                http://elib.kdt.kz
+              </a>
+            </div>
+            <div class="swiper-slide platforms__slide">
+              <img src="img/platforms/platforms-2.png" alt="platform e-biblio">
+              <a href="http://estol.kdt.kz" class="platforms__item-link">
+                <h5 class="platforms__item-name">Ешь не думая с E-Столовой</h5>
+                http://estol.kdt.kz
+              </a>
+            </div>
+            <div class="swiper-slide platforms__slide">
+              <img src="img/platforms/platforms-3.png" alt="platform e-biblio">
+              <a href="http://security.kdt.kz" class="platforms__item-link">
+                <h5 class="platforms__item-name">Безопасность с BMC СМБР!</h5>
+                http://security.kdt.kz
+              </a>
+            </div>
+            <div class="swiper-slide platforms__slide">
+              <img src="img/platforms/platforms-4.png" alt="platform e-biblio">
+              <a href="http://exams.kdt.kz" class="platforms__item-link">
+                <h5 class="platforms__item-name">Проверь свои знания с Exams</h5>
+                http://exams.kdt.kz
+              </a>
+            </div>
+            <div class="swiper-slide platforms__slide">
+              <img src="img/platforms/platforms-4.png" alt="platform e-biblio">
+              <a href="http://exams.kdt.kz" class="platforms__item-link">
+                <h5 class="platforms__item-name">Проверь свои знания с Exams</h5>
+                http://exams.kdt.kz
+              </a>
+            </div>
+            <div class="swiper-slide platforms__slide">
+              <img src="img/platforms/platforms-4.png" alt="platform e-biblio">
+              <a href="http://exams.kdt.kz" class="platforms__item-link">
+                <h5 class="platforms__item-name">Проверь свои знания с Exams</h5>
+                http://exams.kdt.kz
+              </a>
+            </div>
+            <div class="swiper-slide platforms__slide">
+              <img src="img/platforms/platforms-4.png" alt="platform e-biblio">
+              <a href="http://exams.kdt.kz" class="platforms__item-link">
+                <h5 class="platforms__item-name">Проверь свои знания с Exams</h5>
+                http://exams.kdt.kz
+              </a>
+            </div>
+            <!-- Slides -->
+
+          </div>
+          <!-- Additional required wrapper -->
+
+          <div class="swiper-button-prev platforms__button-prev"><i class="fas fa-angle-left"></i></div>
+          <div class="swiper-button-next platforms__button-next"><i class="fas fa-angle-right"></i></div>
+          <!-- navigation buttons -->
+
+        </div>
+        <!-- Slider main container -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section platforms -->
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__row">
+        <div class="col-23-4 footer__col">
+          <h3 class="footer__header">Товаропроводящие сети на <strong class="footer__header-strong">BMC Sales</strong>
+          </h3>
+          <p class="footer__text">Наша платформа предоставляет услуги по созданию онлайн-магазинов для продажи вашей
+            продукции</p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="footer__social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="footer__social-link"><i class="fab fa-vk"></i></a>
+            <a href="#" class="footer__social-link"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-23-4 footer__col">
+          <h4 class="footer__app-header">Мобильное приложение</h4>
+          <a href="#" class="footer__apple"><img src="img/footer/apple.png" alt="apple store"></a>
+          <a href="#" class="footer__google-play"><img src="img/footer/google-play.png" alt="Google Play"></a>
+          <a href="#" class="button button--outline footer__button">Ваш профиль <i
+              class="button__icon fas fa-angle-right"></i></a>
+        </div>
+        <div class="col-23-4 footer__col">
+          <ul class="footer__about-list">
+            <li class="footer__list-item"><a class="footer__list-link" href="#">О платформе</a></li>
+            <li class="footer__list-item"><a class="footer__list-link" href="#">Участники</a></li>
+            <li class="footer__list-item"><a class="footer__list-link" href="#">Партнеры </a></li>
+            <li class="footer__list-item"><a class="footer__list-link" href="#">Поддержка и обслуживание</a></li>
+            <li class="footer__list-item"><a class="footer__list-link" href="#">Конфиденциальность </a></li>
+            <li class="footer__list-item"><a class="footer__list-link" href="#">Новости </a></li>
+            <li class="footer__list-item"><a class="footer__list-link" href="#">Доставка </a></li>
+            <li class="footer__list-item"><a class="footer__list-link" href="#">Оплата и Возврат</a></li>
+          </ul>
+        </div>
+        <div class="col-23-4 footer__col">
+          <a href="#" class="footer__logo"><img src="img/footer/footer-logo.png" alt="Company logo"></a>
+          <a href="tel:+77777888999" class="footer__tel">+7 (777) 788 89 99</a>
+          <a href="mailto:bmc-sales@gmail.com" class="footer__mail">bmc-sales@gmail.com</a>
+          <img src="img/footer/credit-carts.png" alt="credit cards" class="footer__credit-carts">
+        </div>
+      </div>
+    </div>
+    <!-- /.container -->
+  </footer>
+  <!-- /.footer -->
+  <footer class="footer-copyright">
+    <div class="container">
+      <div class="row">
+        <strong class="footer-copyright__text">Copyright © BenchMark Consulting 2018-2019. Все права защищены</strong>
+        <a href="#" class="footer-copyright__error">Сообщить об ошибке</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="popup">
+    <form action="sendModal.php" method="POST" class="popup__dialog" id="login">
+      <h4 class="popup__title">Войти в профиль</h4>
+      <div class="popup__input-group">      
+        <label class="popup__input" for="loginName">Логин</label>
+        <input id="loginName" placeholder="Ваш логин" type="text" name="loginName">
+      </div>
+      <div class="popup__input-group">
+        <label for="loginPassword">Пароль</label>
+        <input class="popup__input" id="loginPassword" placeholder="Ваш пароль" type="password" name="loginPassword">
+      </div>
+      <input class="popup__submit" value="Войти" type="submit">
+      <button class="popup__close"></button>
+    </form>
+  </div>
+  <!-- /.popup -->
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.4/moment-timezone-with-data.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

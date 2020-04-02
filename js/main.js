@@ -234,6 +234,69 @@ timer();
     }
   });
 
+  let select1 = function () {
+    let select1Header = document.querySelectorAll('.select-sort-by__header');
+    let select1Item = document.querySelectorAll('.select-sort-by__item');
+    select1Header.forEach(item => {
+        item.addEventListener('click', selectToggle)
+    });
+    select1Item.forEach(item => {
+        item.addEventListener('click', selectChoose)
+    });
+    function selectToggle() {
+        this.parentElement.classList.toggle('select-by--active');
+    }
+    function selectChoose() {
+        let text = this.innerText,
+            select = this.closest('.select-sort-by'),
+            currentText = select.querySelector('.select-sort-by__current');
+        currentText.innerText = text;
+        select.classList.remove('select-by--active');
+    }
+  };
+
+  let select2 = function () {
+    let select2Header = document.querySelectorAll('.select-sort-number__header');
+    let select2Item = document.querySelectorAll('.select-sort-number__item');
+    select2Header.forEach(item => {
+        item.addEventListener('click', selectToggle)
+    });
+    select2Item.forEach(item => {
+        item.addEventListener('click', selectChoose)
+    });
+    function selectToggle() {
+        this.parentElement.classList.toggle('select-number--active');
+    }
+    function selectChoose() {
+        let text = this.innerText,
+            select = this.closest('.select-sort-number'),
+            currentText = select.querySelector('.select-sort-number__current');
+        currentText.innerText = text;
+        select.classList.remove('select-number--active');
+    }
+  };
+
+  select1();
+  select2();
+
+  // скрытие меню при клике вне его
+  $(document).mouseup(function (e){ // событие клика по веб-документу
+    var div2 = $(".select-sort-by"); // тут указываем ID элемента
+    if (!div2.is(e.target) // если клик был не по нашему блоку
+        && div2.has(e.target).length === 0) { // и не по его дочерним элементам
+          $('.select-sort-by').removeClass('select-by--active') // скрываем его
+    }
+  });
+
+  // скрытие меню при клике вне его
+  $(document).mouseup(function (e){ // событие клика по веб-документу
+    var div2 = $(".select-sort-number"); // тут указываем ID элемента
+    if (!div2.is(e.target) // если клик был не по нашему блоку
+        && div2.has(e.target).length === 0) { // и не по его дочерним элементам
+          $('.select-sort-number').removeClass('select-number--active') // скрываем его
+    }
+  });
+
 
 
 })
