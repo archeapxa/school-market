@@ -160,8 +160,8 @@
     //   margin-bottom: 4rem
   .card
     margin-bottom: 3rem
-    &__image
-      min-height: 320px
+    // &__image
+    //   min-height: 320px
   .timer
     font-size: 8px
   .banner
@@ -252,6 +252,11 @@
       &-list
         right: 70%
         top: 0
+  .col-31
+    flex-basis: 46%
+  .catalog
+    &__items-row
+      justify-content: space-around
 @media screen and ( max-width: 767px )
   .timer
     font-size: 6px
@@ -279,6 +284,27 @@
         display: none
       &:nth-of-type(4)
         flex-basis: 48%
+  .catalog
+    &__path
+      display: none
+    &__categories
+      display: none
+    &__title
+      margin-bottom: 2rem
+      width: 180px
+      display: none
+    &__row
+      justify-content: space-around
+    &__sort
+      margin-left: 0
+      &-category
+        display: flex
+    &__filters
+      margin-bottom: 3rem
+    &__title-mobile
+      display: block
+  .col-74-4
+    flex-basis: 95%
 @media screen and ( max-width: 576px )
   .hero
     &__title
@@ -294,6 +320,17 @@
     display: none
   .banner
     display: none
+  .col-31
+    flex-basis: 90%
+    align-items: center
+  .catalog
+    &__items-row
+      justify-content: space-around
+    &__sort
+      width: 100%
+      margin-bottom: 1rem
+  .row--aligned-up
+    flex-direction: column
 @media screen and ( max-width: 480px )
   .platforms
     &__item-link

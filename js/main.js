@@ -276,24 +276,56 @@ timer();
     }
   };
 
+
+  let select3 = function () {
+    let select3Header = document.querySelectorAll('.select-sort-category__header');
+    let select3Item = document.querySelectorAll('.select-sort-category__item');
+    select3Header.forEach(item => {
+        item.addEventListener('click', selectToggle)
+    });
+    select3Item.forEach(item => {
+        item.addEventListener('click', selectChoose)
+    });
+    function selectToggle() {
+        this.parentElement.classList.toggle('select-category--active');
+    }
+    function selectChoose() {
+        let text = this.innerText,
+            select = this.closest('.select-sort-category'),
+            currentText = select.querySelector('.select-sort-category__current');
+        currentText.innerText = text;
+        select.classList.remove('select-category--active');
+    }
+  };
+
   select1();
   select2();
+  select3();
 
   // скрытие меню при клике вне его
   $(document).mouseup(function (e){ // событие клика по веб-документу
-    var div2 = $(".select-sort-by"); // тут указываем ID элемента
-    if (!div2.is(e.target) // если клик был не по нашему блоку
-        && div2.has(e.target).length === 0) { // и не по его дочерним элементам
+    var div4 = $(".select-sort-by"); // тут указываем ID элемента
+    if (!div4.is(e.target) // если клик был не по нашему блоку
+        && div4.has(e.target).length === 0) { // и не по его дочерним элементам
           $('.select-sort-by').removeClass('select-by--active') // скрываем его
     }
   });
 
   // скрытие меню при клике вне его
   $(document).mouseup(function (e){ // событие клика по веб-документу
-    var div2 = $(".select-sort-number"); // тут указываем ID элемента
-    if (!div2.is(e.target) // если клик был не по нашему блоку
-        && div2.has(e.target).length === 0) { // и не по его дочерним элементам
+    var div5 = $(".select-sort-number"); // тут указываем ID элемента
+    if (!div5.is(e.target) // если клик был не по нашему блоку
+        && div5.has(e.target).length === 0) { // и не по его дочерним элементам
           $('.select-sort-number').removeClass('select-number--active') // скрываем его
+    }
+  });
+
+  // скрытие меню при клике вне его
+  $(document).mouseup(function (e){ // событие клика по веб-документу
+    var div6 = $(".select-sort-number"); // тут указываем ID элемента
+    if (!div6.is(e.target) // если клик был не по нашему блоку
+        && div6.has(e.target).length === 0) { // и не по его дочерним элементам
+          $('.select-sort-category').removeClass('select-category--active') // скрываем его
     }
   });
 
