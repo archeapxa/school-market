@@ -129,12 +129,17 @@
     &-type
       &-tabs
         position: relative
-        height: 120px
+        height: 150px
+      &-title
+        margin-bottom: 1.5rem
+        font-size: 1.14rem
+        font-family: "DIN Pro - Medium", sans-serif
     &-tab
       display: inline-block
       &-wrapper
         padding-top: 2rem
         padding-bottom: 2rem
+        border-bottom: 1px solid #cccccc
       &-input
         display: none
       .item__delivery-tab-input:checked +
@@ -148,7 +153,7 @@
             background: $light url(../img/active.png) no-repeat center
       .item__delivery-tab-input:checked ~ 
         .item__delivery-tab-content
-          display: block  
+          display: flex  
       &-title
         display: inline-block
         padding: 5px 20px 15px 50px
@@ -157,6 +162,7 @@
         font-size: 1.14rem
         position: relative
         font-family: "DIN Pro - Medium", sans-serif
+        cursor: pointer
         &:before
           content: ''
           position: absolute
@@ -168,10 +174,35 @@
           top: 3px
       &-content
         position: absolute
-        padding: 10px
+        padding: 25px 10px
         width: 100%
-        
         left: 0
         border-top: 1px solid lighten($mainBlack, 70%)
         display: none
+        flex-wrap: wrap
+    &-point
+      display: flex
+      justify-content: flex-start
+      align-items: center
+      cursor: pointer
+      border: 1px solid #cccccc
+      padding: 5px 10px 5px 5px
+      margin-right: 10px
+      // max-width: 340px
+      &-title
+        font-size: 1.14rem
+        font-family: "DIN Pro - Medium", sans-serif
+        width: 100%
+        margin-bottom: 1rem
+      &-input
+        display: none
+        &:checked ~ .item__delivery-point-radio
+          background: $light url(../img/active.png) no-repeat center
+      &-radio
+        display: inline-block
+        height: 20px
+        width: 20px
+        border: 1px solid #cccccc
+        border-radius: 50%
+        margin-right: 10px
 
