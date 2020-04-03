@@ -1437,7 +1437,8 @@ input.invalid {
     left: -webkit-calc(50% - 49px);
     left: calc(50% - 49px); }
   .discount__swiper {
-    padding-bottom: 1.4rem; }
+    padding-bottom: 1.4rem;
+    padding-left: 10px; }
 
 .banner {
   background: url(../img/banner/banner-bg.png) no-repeat center/cover;

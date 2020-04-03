@@ -159,7 +159,7 @@ $(document).ready(function () {
 
 function timer(settings){
   var config = {
-      endDate: '2020-04-06 09:00',
+      endDate: '2020-04-06 22:00',
       timeZone: 'Europe/Dublin',
       hours: $('#hours'),
       minutes: $('#minutes'),
