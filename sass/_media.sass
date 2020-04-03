@@ -87,6 +87,38 @@
           color: $light
           background-color: darken($orange, 8%)
           border-color: darken($orange, 8%)
+  .item
+    &__button
+      &:hover
+        border-color: $orange
+        color: $light
+        background-color: $orange
+    &__social-link
+      &:hover
+        color: $mainBlack
+@media screen and ( max-width: 1420px )
+  .item
+    &__delivery
+      &-type
+        &-tabs
+          height: 200px
+      &-point
+        margin-bottom: 1rem
+      &-tab
+        &-content
+          justify-content: space-around
+@media screen and ( max-width: 1360px )
+  .item__button
+    // flex-basis: 50%
+    width: 50%
+    margin: auto
+    margin-bottom: 1rem
+    text-align: center
+    min-width: 236px
+    &-wrapper
+      flex-direction: column
+      align-items: center
+
 @media screen and ( max-width: 1200px )
   html
     font-size: 12px
@@ -171,6 +203,18 @@
     &__text
       margin-top: 0
       font-size: 1.8rem
+  .item
+    &__photo-col
+      width: 70%
+      text-align: center
+    &__buy-col
+      width: 90%
+    &__row
+      align-items: center
+    &__color
+      &-wrapper
+        flex-wrap: wrap
+        justify-content: space-around
 @media screen and ( max-width: 870px )
   .header-partners
     &__burger
@@ -305,6 +349,22 @@
       display: block
   .col-74-4
     flex-basis: 95%
+  .item
+    &__photo-col
+      width: 100%
+    &__color
+      width: 112px
+      &-title
+        width: 100%
+        margin-bottom: 1rem
+        text-align: center
+    &__info
+      &-wrapper
+        justify-content: space-around
+      &-in-bag
+        display: none
+      &-in-favorite
+        display: none
 @media screen and ( max-width: 576px )
   .hero
     &__title
@@ -331,6 +391,18 @@
       margin-bottom: 1rem
   .row--aligned-up
     flex-direction: column
+  .item
+    &__path
+      display: none
+    &__views
+      display: none
+    &__delivery
+      &-tab
+        &-title
+          margin-right: 0
+        &-content
+          padding-left: 0
+          padding-right: 0
 @media screen and ( max-width: 480px )
   .platforms
     &__item-link

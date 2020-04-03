@@ -19,6 +19,7 @@
       color: lighten($mainBlack, 50%)
   &__photo-col
     flex-basis: 40.4%
+    margin-bottom: 4rem
   &__buy-col
     flex-basis: 57.45%
   &__current
@@ -30,6 +31,7 @@
       align-items: center
       justify-content: center
       border: 1px solid lighten($mainBlack, 70%)
+      margin: auto
       &--active
         display: flex
   &__small
@@ -38,9 +40,10 @@
       justify-content: center
       align-items: center
       border: 1px solid lighten($mainBlack, 70%)
-      height: 6.214rem
-      width: 6.214rem
+      height: 87px
+      max-width: 87px
       cursor: pointer
+      flex-basis: 18%
       &--active
         border-color: $orange
       &-wrapper
@@ -74,6 +77,7 @@
     font-family: "DIN Pro - Bold", sans-serif
     margin-bottom: 0.5rem
     line-height: 3.5rem
+    margin-right: 1rem
     &-wrapper
       display: flex
       justify-content: space-between
@@ -97,12 +101,14 @@
     border: 1px solid lighten($mainBlack, 70%)
     margin-right: 0.7rem
     cursor: pointer
+    margin-bottom: 1rem
     &--active
       border-color: lighten($orange, 15%)
     &-wrapper
       display: flex
       align-items: center
       padding: 2.15rem 0
+      padding-bottom: 1.15rem
       border-bottom: 1px dashed lighten($mainBlack, 70%)
     &-radio
       display: none
@@ -217,18 +223,22 @@
     padding: 13px 30px 15px 18px
     border: 2px solid $mainBlack
     font-size: 1.32rem
-    margin-left: 23px
+    margin-right: 23px
+    margin-bottom: 1rem
     &--whole
       padding: 13px 22px 15px 23px
       margin-left: auto
+      margin-right: 0
     &--add
       margin-left: 0
+      text-align: center
     &-wrapper
       padding-top: 2.15rem
-      padding-bottom: 2.1rem
+      padding-bottom: 1.1rem
       display: flex
       justify-content: space-between
       border-bottom: 1px solid #cccccc
+      flex-wrap: wrap
     &-icon
       margin-right: 0.9rem
   &__info
