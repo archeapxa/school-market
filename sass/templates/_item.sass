@@ -1,26 +1,26 @@
 .item
-  padding-top: 3rem
+  padding-top: 4rem
   background-color: $light
   &__row
     align-items: flex-start
   &__path
-    font-size: 1.14rem
+    font-size: 1.12rem
     text-decoration: none
     color: $mainBlack
     line-height: 100%
     border-right: 1px solid lighten($mainBlack, 60%)
-    padding-right: 12px
-    padding-left: 10px
-    margin-bottom: 3rem
+    padding-right: 13px
+    padding-left: 12px
+    margin-bottom: 4.35rem
     &:first-of-type
       padding-left: 0
     &--disabled
       border: none
       color: lighten($mainBlack, 50%)
   &__photo-col
-    flex-basis: 40%
+    flex-basis: 40.4%
   &__buy-col
-    flex-basis: 57%
+    flex-basis: 57.45%
   &__current
     &-image
       display: none
@@ -50,13 +50,14 @@
   &__name
     margin: 0
     margin-right: auto
-    font-size: 1.714rem
+    font-size: 1.74rem
     font-weight: 700
+    line-height: 1.3rem
     &-wrapper
       display: flex
       justify-content: space-between
       align-items: flex-end
-      padding-bottom: 1.78rem
+      padding-bottom: 1.85rem
       border-bottom: 1px solid lighten($mainBlack, 70%)
   &__views
     padding-right: 1rem
@@ -64,6 +65,8 @@
     color: lighten($mainBlack, 50%)
   &__rating
     align-self: center
+    i
+      margin-left: 1.5px
   &__price
     display: inline-block
     font-size: 3.42rem
@@ -75,16 +78,16 @@
       display: flex
       justify-content: space-between
       align-items: center
-      padding-top: 2rem
-      padding-bottom: 2rem
-      border-bottom: 1px solid lighten($mainBlack, 70%)
+      padding-top: 2.35rem
+      padding-bottom: 2.5rem
+      border-bottom: 1px dashed lighten($mainBlack, 70%)
     &-block
     &-value
       font-size: 1.714rem
       font-weight: 700
   &__on-stock
     color: lighten($mainBlack, 50%)
-    font-size: 1.14rem
+    font-size: 1.16rem
     strong
       color: $mainBlack
       font-family: "DIN Pro - Medium", sans-serif
@@ -92,15 +95,15 @@
     display: flex
     align-items: center
     border: 1px solid lighten($mainBlack, 70%)
-    margin-right: 1rem
+    margin-right: 0.7rem
     cursor: pointer
     &--active
       border-color: lighten($orange, 15%)
     &-wrapper
       display: flex
       align-items: center
-      padding: 2rem 0
-      border-bottom: 1px solid lighten($mainBlack, 70%)
+      padding: 2.15rem 0
+      border-bottom: 1px dashed lighten($mainBlack, 70%)
     &-radio
       display: none
     &-example
@@ -111,20 +114,20 @@
       &--green
         background-color: #86c255
       &--yellow
-        background-color: yellow
+        background-color: #e9eb5b
       &--red
         background-color: #e84b4b
       &--blue
         background-color: #4b91e8
     &-name
-      padding-left: 1rem
-      padding-right: 1rem
+      padding-left: 1.25rem
+      padding-right: 1.4rem
       font-size: 1rem
       font-family: "DIN Pro - Medium", sans-serif
     &-title
-      padding-right: 20px
+      padding-right: 30px
       font-family: "DIN Pro - Medium", sans-serif
-      font-size: 1.14rem
+      font-size: 1.19rem
   &__delivery
     &-type
       &-tabs
@@ -132,14 +135,14 @@
         height: 150px
       &-title
         margin-bottom: 1.5rem
-        font-size: 1.14rem
+        font-size: 1.16rem
         font-family: "DIN Pro - Medium", sans-serif
     &-tab
       display: inline-block
       &-wrapper
-        padding-top: 2rem
-        padding-bottom: 2rem
-        border-bottom: 1px solid #cccccc
+        padding-top: 1.85rem
+        padding-bottom: 1.64rem
+        border-bottom: 1px dashed #cccccc
       &-input
         display: none
       .item__delivery-tab-input:checked +
@@ -156,7 +159,8 @@
           display: flex  
       &-title
         display: inline-block
-        padding: 5px 20px 15px 50px
+        padding: 9px 29px 21px 31px
+        margin-right: 1.75rem
         // border: 1px solid lighten($mainBlack, 20%)
         border-bottom: none
         font-size: 1.14rem
@@ -170,11 +174,11 @@
           width: 20px
           border-radius: 50%
           border: 1px solid #cccccc
-          left: 15px
-          top: 3px
+          left: 2px
+          top: 7px
       &-content
         position: absolute
-        padding: 25px 10px
+        padding: 26px 31px
         width: 100%
         left: 0
         border-top: 1px solid lighten($mainBlack, 70%)
@@ -189,11 +193,13 @@
       padding: 5px 10px 5px 5px
       margin-right: 10px
       // max-width: 340px
+      &--active
+        border-color: lighten($orange, 15%)
       &-title
         font-size: 1.14rem
         font-family: "DIN Pro - Medium", sans-serif
         width: 100%
-        margin-bottom: 1rem
+        margin-bottom: 1.4rem
       &-input
         display: none
         &:checked ~ .item__delivery-point-radio
@@ -205,4 +211,38 @@
         border: 1px solid #cccccc
         border-radius: 50%
         margin-right: 10px
+  &__button
+    color: $mainBlack
+    text-decoration: none
+    padding: 13px 30px 15px 18px
+    border: 2px solid $mainBlack
+    font-size: 1.32rem
+    margin-left: 23px
+    &--whole
+      padding: 13px 22px 15px 23px
+      margin-left: auto
+    &--add
+      margin-left: 0
+    &-wrapper
+      padding-top: 2.15rem
+      padding-bottom: 2.1rem
+      display: flex
+      justify-content: space-between
+      border-bottom: 1px solid #cccccc
+    &-icon
+      margin-right: 0.9rem
+  &__info
+    &-wrapper
+      padding-top: 2rem
+      padding-bottom: 2rem
+      padding-left: 2px
+      display: flex
+      justify-content: space-between
+    &-in-bag
+      margin-right: 2rem
+    &-in-favorite
+      margin-right: auto
+  &__social-link
+    color: lighten($mainBlack, 50%)
+    margin-left: 1.25rem
 

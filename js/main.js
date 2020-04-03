@@ -376,4 +376,8 @@ timer();
     $(this).addClass('item__color--active').siblings().removeClass('item__color--active');
   });
 
+  $('.item__delivery-point').on('click', function() {
+    $(this).addClass('item__delivery-point--active').siblings().removeClass('item__delivery-point--active');
+  });
+
 })
