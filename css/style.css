@@ -1794,6 +1794,23 @@ input.invalid {
       color: #ffffff;
       border-color: #f47920; }
 
+.item {
+  padding-top: 3rem;
+  background-color: #ffffff; }
+  .item__path {
+    font-size: 1.14rem;
+    text-decoration: none;
+    color: #202020;
+    line-height: 100%;
+    border-right: 1px solid #b9b9b9;
+    padding-right: 12px;
+    padding-left: 10px; }
+    .item__path:first-of-type {
+      padding-left: 0; }
+    .item__path--disabled {
+      border: none;
+      color: #a0a0a0; }
+
 .footer {
   padding-top: 2.5rem;
   padding-bottom: 4rem; }
