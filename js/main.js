@@ -133,6 +133,28 @@ $(document).ready(function () {
   });
 
 
+    var mySwiper3 = new Swiper ('.discount__swiper', {
+    // Navigation arrows
+    navigation: {
+      nextEl: '.discount__button-next',
+      prevEl: '.discount__button-prev',
+    },
+    slidesPerView: 1,
+    spaceBetween: 20,
+    breakpoints: {
+      991: {
+        slidesPerView: 4
+      },
+      767: {
+        slidesPerView: 3
+      },
+      480: {
+        slidesPerView: 2
+      }
+    }
+  });
+
+
 // timer
 
 function timer(settings){

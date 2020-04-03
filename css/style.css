@@ -1388,6 +1388,8 @@ input.invalid {
   background-color: #ffffff;
   padding-top: 2.14rem;
   padding-bottom: 3rem; }
+  .discount--small {
+    padding-bottom: 0.3rem; }
   .discount__container {
     overflow: visible; }
   .discount__section-title {
@@ -1425,6 +1427,17 @@ input.invalid {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center; }
+  .discount__button-next, .discount__button-prev {
+    bottom: 0;
+    top: auto; }
+  .discount__button-next {
+    left: -webkit-calc(50% + 6px);
+    left: calc(50% + 6px); }
+  .discount__button-prev {
+    left: -webkit-calc(50% - 49px);
+    left: calc(50% - 49px); }
+  .discount__swiper {
+    padding-bottom: 1.4rem; }
 
 .banner {
   background: url(../img/banner/banner-bg.png) no-repeat center/cover;

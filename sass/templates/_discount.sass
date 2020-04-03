@@ -2,6 +2,8 @@
   background-color: $light
   padding-top: 2.14rem
   padding-bottom: 3rem
+  &--small
+    padding-bottom: 0.3rem
   &__container
     overflow: visible
   &__section-title
@@ -31,3 +33,13 @@
     margin-top: 0.6rem
     display: flex
     justify-content: center
+  &__button
+    &-next, &-prev
+      bottom: 0
+      top: auto
+    &-next
+      left: calc(50% + 6px)
+    &-prev
+      left: calc(50% - 49px)
+  &__swiper
+    padding-bottom: 1.4rem
