@@ -353,4 +353,27 @@ timer();
 
 
 
+  // $(function () {
+
+  //   $('.item__small-image').on('click', 'div:not(.item__small-image--active)', function () {
+  //     $(this).addClass('item__small-image--active').siblings().removeClass('active');
+  //     $('.item__photo-col').find('div.item__current-image').hide().removeClass('item__current-image--active').eq($(this).index()).fadeIn(250).addClass('item__current-image--active');
+  //   })
+
+  // });
+
+
+  $(function () {
+
+    $('.item__small-image').on('click', function () {
+      $(this).addClass('item__small-image--active').siblings().removeClass('item__small-image--active');
+      $('.item__photo-col').find('div.item__current-image').hide().removeClass('item__current-image--active').eq($(this).index()).fadeIn().css('display', 'flex').addClass('item__current-image--active');
+    })
+
+  });
+
+  $('.item__color').on('click', function() {
+    $(this).addClass('item__color--active').siblings().removeClass('item__color--active');
+  });
+
 })

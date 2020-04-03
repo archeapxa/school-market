@@ -111,8 +111,110 @@
           <a href="catalog.html" class="item__path">Рюкзаки</a>
           <a class="item__path item__path--disabled">Рюкзак PUMA</a>
         </div>
+        <!-- 15.8 -->
+        <div class="row item__row">
+          <div class="item__photo-col">
+            <div class="item__current-image item__current-image--active"><img src="img/item/product-1.png"
+                alt="product-1 big image"></div>
+            <div class="item__current-image"><img src="img/item/product-small-2.png" alt="product-1 big image"></div>
+            <div class="item__current-image"><img src="img/item/product-small-3.png" alt="product-1 big image"></div>
+            <div class="item__current-image"><img src="img/item/product-small-4.png" alt="product-1 big image"></div>
+            <div class="item__current-image"><img src="img/item/product-small-5.png" alt="product-1 big image"></div>
+
+            <div class="item__small-image-wrapper">
+              <div class="item__small-image item__small-image--active"><img src="img/item/product-small-1.png"
+                  alt="product small 1"></div>
+              <div class="item__small-image"><img src="img/item/product-small-2.png" alt="product small 2"></div>
+              <div class="item__small-image"><img src="img/item/product-small-3.png" alt="product small 3"></div>
+              <div class="item__small-image"><img src="img/item/product-small-4.png" alt="product small 4"></div>
+              <div class="item__small-image"><img src="img/item/product-small-5.png" alt="product small 5"></div>
+            </div>
+            <!-- /.item__small-image-wrapper -->
+          </div>
+          <!-- /.item__photo-col -->
+          <div class="item__buy-col">
+            <div class="item__name-wrapper">
+              <h2 class="item__name">Рюкзак PUMA</h2>
+              <!-- /.item__name -->
+              <span class="item__views">просмотров: <strong>200</strong></span>
+              <span class="rating item__rating">
+                <i class="card__star-rated fas fa-star"></i>
+                <i class="card__star-rated fas fa-star"></i>
+                <i class="card__star-rated fas fa-star"></i>
+                <i class="card__star-unrated far fa-star"></i>
+                <i class="card__star-unrated far fa-star"></i>
+              </span>
+              <!-- card rating -->
+            </div>
+            <!-- /.item__name-wrapper -->
+
+            <div class="item__price-wrapper">
+              <div class="item__price-block">
+                <strong class="item__price">5 000.00 <span class="item__price-value">KZT / Шт.</span></strong>
+                <!-- /.item__price -->
+                <div class="item__on-stock">В наличии на складе: <strong>(1)</strong></div>
+                <!-- /.item__on-stock -->
+              </div>
+              <img src="img/item/item-qr.png" alt="QR">
+            </div>
+            <!-- /.item__price-wrapper -->
+
+            <div class="item__color-wrapper">
+              <div class="item__color-title">Цвет:</div>
+              <label class="item__color item__color--active">
+                <input type="radio" name="color" class="item__color-radio" checked="checked">
+                <span class="item__color-example item__color-example--green"></span>
+                <span class="item__color-name">Зеленый</span>
+              </label>
+              <label class="item__color">
+                <input type="radio" name="color" class="item__color-radio">
+                <span class="item__color-example item__color-example--yellow"></span>
+                <span class="item__color-name">Желтый</span>
+              </label>
+              <label class="item__color">
+                <input type="radio" name="color" class="item__color-radio">
+                <span class="item__color-example item__color-example--red"></span>
+                <span class="item__color-name">Красный</span>
+              </label>
+              <label class="item__color">
+                <input type="radio" name="color" class="item__color-radio">
+                <span class="item__color-example item__color-example--blue"></span>
+                <span class="item__color-name">Синий</span>
+              </label>
+            </div>
+            <!-- item__color-wrapper -->
+
+            <div class="item__delivery-tab-wrapper">
+              <div class="item__delivery-type-title">Способ доставки:</div>
+
+              <div class="item__delivery-type-tabs">
+
+                <div class="item__delivery-tab">
+                  <input class="item__delivery-tab-input" id="delivery-tab-1" type="radio" name="delivery-tab" checked>
+                  <label class="item__delivery-tab-title" for="delivery-tab-1">Самовывоз</label>
+                  <section class="item__delivery-tab-content">
+                    TAB 1
+                  </section>
+                </div>
+
+                <div class="item__delivery-tab">
+                  <input class="item__delivery-tab-input" id="delivery-tab-2" type="radio" name="delivery-tab">
+                  <label class="item__delivery-tab-title" for="delivery-tab-2">Доставка</label>
+                  <section class="item__delivery-tab-content">
+                    TAB 2
+                  </section>
+                </div>
+              </div>
+              <!-- /.item__delivery-type-tabs -->
 
 
+
+            </div>
+            <!-- iteem__delivery-tab-wrapper -->
+          </div>
+          <!-- item buy col -->
+        </div>
+        <!-- row item-row -->
       </div>
       <!-- /.container -->
     </section>
@@ -148,7 +250,7 @@
                   <!-- /.card__item-name -->
                   <strong class="card__item-category">Детская одежда</strong>
                   <!-- /.card__item-category -->
-                  <span class="card__rating">
+                  <span class="card__rating rating">
                     <i class="card__star-rated fas fa-star"></i>
                     <i class="card__star-rated fas fa-star"></i>
                     <i class="card__star-rated fas fa-star"></i>
@@ -484,7 +586,7 @@
   <div class="popup">
     <form action="sendModal.php" method="POST" class="popup__dialog" id="login">
       <h4 class="popup__title">Войти в профиль</h4>
-      <div class="popup__input-group">      
+      <div class="popup__input-group">
         <label class="popup__input" for="loginName">Логин</label>
         <input id="loginName" placeholder="Ваш логин" type="text" name="loginName">
       </div>
