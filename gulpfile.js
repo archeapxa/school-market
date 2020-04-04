@@ -102,7 +102,7 @@ function deploy(done) {
     'dist/**',
     ];
   return src(globs, {buffer: false})
-    .pipe(conn.dest('/www/webstanislav.ru/repair-company/'));
+    .pipe(conn.dest('/www/webstanislav.ru/school-market/'));
 }
 
 

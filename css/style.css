@@ -1429,7 +1429,7 @@ input.invalid {
 .discount {
   background-color: #ffffff;
   padding-top: 2.14rem;
-  padding-bottom: 3rem; }
+  padding-bottom: 5rem; }
   .discount--small {
     padding-bottom: 0.3rem; }
   .discount__container {
@@ -1483,9 +1483,8 @@ input.invalid {
     padding-left: 10px; }
 
 .banner {
-  background: url(../img/banner/banner-bg.png) no-repeat center/cover;
-  padding-top: 2rem;
-  margin-top: 2rem; }
+  background: #ffffff url(../img/banner/banner-bg.png) no-repeat center/cover;
+  padding-top: 2rem; }
   .banner__row {
     display: -webkit-box;
     display: -webkit-flex;
@@ -2375,6 +2374,7 @@ input.invalid {
     font-weight: normal; }
   .footer__apple, .footer__google-play {
     max-width: 12.5rem;
+    max-height: 4.64rem;
     margin-bottom: 0rem;
     margin-top: 0; }
   .footer__button {
@@ -2398,6 +2398,7 @@ input.invalid {
         -ms-flex-pack: justify;
             justify-content: space-between;
     height: 100%;
+    max-height: 250px;
     margin-bottom: 0.2rem;
     margin-top: 1.5rem; }
   .footer__list-item {
