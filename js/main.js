@@ -1,5 +1,11 @@
 $(document).ready(function () {
 
+
+
+  if (typeof NodeList.prototype.forEach !== 'function')  {
+    NodeList.prototype.forEach = Array.prototype.forEach;
+  }
+
   //бургер меню в хедере партнеров
   $('.header-partners__burger-link').on('click', function(e) {
     e.preventDefault;
@@ -256,13 +262,14 @@ timer();
     }
   });
 
+  //custom select menu
   let select1 = function () {
     let select1Header = document.querySelectorAll('.select-sort-by__header');
     let select1Item = document.querySelectorAll('.select-sort-by__item');
-    select1Header.forEach(item => {
-        item.addEventListener('click', selectToggle);
+    select1Header.forEach( function(item) {
+      item.addEventListener('click', selectToggle);
     });
-    select1Item.forEach(item => {
+    select1Item.forEach( function(item) {
         item.addEventListener('click', selectChoose);
     });
     function selectToggle() {
@@ -280,10 +287,10 @@ timer();
   let select2 = function () {
     let select2Header = document.querySelectorAll('.select-sort-number__header');
     let select2Item = document.querySelectorAll('.select-sort-number__item');
-    select2Header.forEach(item => {
+    select2Header.forEach ( function (item) {
         item.addEventListener('click', selectToggle)
     });
-    select2Item.forEach(item => {
+    select2Item.forEach ( function (item) {
         item.addEventListener('click', selectChoose)
     });
     function selectToggle() {
@@ -302,10 +309,10 @@ timer();
   let select3 = function () {
     let select3Header = document.querySelectorAll('.select-sort-category__header');
     let select3Item = document.querySelectorAll('.select-sort-category__item');
-    select3Header.forEach(item => {
+    select3Header.forEach ( function (item) {
         item.addEventListener('click', selectToggle)
     });
-    select3Item.forEach(item => {
+    select3Item.forEach ( function (item) {
         item.addEventListener('click', selectChoose)
     });
     function selectToggle() {
