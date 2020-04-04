@@ -1391,6 +1391,8 @@ input.invalid {
     width: 100%;
     height: 100%;
     padding: 4.71em;
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
     border: 5px solid #f47920;
     border-radius: 50%;
     display: -webkit-box;
