@@ -1801,7 +1801,8 @@ input.invalid {
     -webkit-box-align: start;
     -webkit-align-items: flex-start;
         -ms-flex-align: start;
-            align-items: flex-start; }
+            align-items: flex-start;
+    margin-bottom: 4.5rem; }
   .item__path {
     font-size: 1.12rem;
     text-decoration: none;
@@ -2134,6 +2135,124 @@ input.invalid {
   .item__social-link {
     color: #a0a0a0;
     margin-left: 1.25rem; }
+  .item__more-row {
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .item__more-tabs {
+    position: relative;
+    height: 450px; }
+    .item__more-tabs-col {
+      -webkit-flex-basis: 74.4%;
+          -ms-flex-preferred-size: 74.4%;
+              flex-basis: 74.4%; }
+  .item__more-tab {
+    display: inline-block; }
+    .item__more-tab-title {
+      display: inline-block;
+      font-size: 1.31rem;
+      padding: 15px 23px;
+      margin-right: 24px; }
+    .item__more-tab-input {
+      display: none; }
+    .item__more-tab-content {
+      position: absolute;
+      background-color: #efefef;
+      width: 100%;
+      left: 0;
+      display: none;
+      padding: 21px 40px;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+    .item__more-tab .item__more-tab-input:checked ~ .item__more-tab-content {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+    .item__more-tab .item__more-tab-input:checked + .item__more-tab-title {
+      background-color: #efefef;
+      padding: 15px 43px; }
+  .item__more-seen-col {
+    -webkit-flex-basis: 23.2%;
+        -ms-flex-preferred-size: 23.2%;
+            flex-basis: 23.2%; }
+  .item__more-seen-title {
+    text-transform: uppercase;
+    font-size: 1.305rem;
+    font-family: "DIN Pro - Medium", sans-serif;
+    font-weight: normal;
+    line-height: 1.2rem;
+    margin-top: 0;
+    padding-bottom: 0.5rem; }
+  .item__more-seen-card {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #cccccc;
+    margin-top: 2.15rem; }
+    .item__more-seen-card:last-of-type {
+      border: none; }
+    .item__more-seen-card-name {
+      font-size: 1.11rem;
+      font-family: "DIN Pro - Medium", sans-serif;
+      margin-bottom: 0.8rem;
+      line-height: 0.9rem; }
+    .item__more-seen-card-category {
+      font-family: "DIN Pro - Light", sans-serif;
+      font-size: 1rem;
+      color: #868686;
+      margin-bottom: 1rem; }
+    .item__more-seen-card-rating {
+      color: #797979;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      width: 101px;
+      margin-bottom: 1rem; }
+    .item__more-seen-card-price {
+      font-size: 1.714rem; }
+      .item__more-seen-card-price span {
+        font-size: 1.14rem; }
+    .item__more-seen-card-img {
+      max-width: 87px;
+      max-height: 87px;
+      margin-right: 30px; }
+  .item__characteristics-row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-bottom: 1px solid #cccccc;
+    padding: 17px 0 15px 0; }
+    .item__characteristics-row:last-of-type {
+      border-bottom: none; }
+  .item__characteristics-param {
+    -webkit-flex-basis: 60%;
+        -ms-flex-preferred-size: 60%;
+            flex-basis: 60%;
+    font-size: 1.315rem; }
+  .item__characteristics-value {
+    -webkit-flex-basis: 43.6%;
+        -ms-flex-preferred-size: 43.6%;
+            flex-basis: 43.6%;
+    font-size: 1.31rem;
+    font-weight: 700;
+    font-family: "DIN Pro - Medium"; }
 
 .footer {
   padding-top: 2.5rem;
