@@ -383,7 +383,8 @@ img {
   padding: 1px 13px 1px 13px;
   border: 1px solid #202020;
   height: 45px;
-  width: 45px; }
+  width: 45px;
+  outline: none; }
   .swiper-button-prev::after, .swiper-button-next::after {
     display: none; }
 
@@ -519,7 +520,8 @@ button {
       right: 0;
       bottom: 0;
       left: 0;
-      background-color: rgba(0, 0, 0, 0.6); }
+      background-color: rgba(0, 0, 0, 0.6);
+      text-decoration: none; }
     .card__image-icons {
       position: relative;
       display: -webkit-box;
@@ -2217,7 +2219,7 @@ input.invalid {
       display: flex; }
     .item__more-tab .item__more-tab-input:checked + .item__more-tab-title {
       background-color: #efefef;
-      padding: 15px 43px; }
+      padding: 15px 23px; }
   .item__more-seen-col {
     -webkit-flex-basis: 23.2%;
         -ms-flex-preferred-size: 23.2%;
@@ -2900,7 +2902,9 @@ input.invalid {
   .item__views {
     display: none; }
   .item__delivery-tab-title {
-    margin-right: 0; }
+    margin-right: 1rem;
+    padding-left: 2.5rem;
+    padding-right: 1rem; }
   .item__delivery-tab-content {
     padding-left: 0;
     padding-right: 0; } }
