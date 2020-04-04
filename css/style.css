@@ -380,8 +380,10 @@ img {
   font-size: 35px;
   color: white;
   background-color: #202020;
-  padding: 1px 20px 1px 22px;
-  border: 1px solid #202020; }
+  padding: 1px 13px 1px 13px;
+  border: 1px solid #202020;
+  height: 45px;
+  width: 45px; }
   .swiper-button-prev::after, .swiper-button-next::after {
     display: none; }
 
@@ -1172,11 +1174,17 @@ input.invalid {
     .hero__button-prev {
       bottom: 128px;
       left: 2px;
-      top: auto; }
+      top: auto;
+      height: 45px;
+      width: 45px;
+      text-align: center; }
     .hero__button-next {
       bottom: 128px;
       left: 57px;
-      top: auto; }
+      top: auto;
+      height: 45px;
+      width: 45px;
+      text-align: center; }
   .hero__item {
     margin-left: -2.25rem;
     display: -webkit-box;
