@@ -260,10 +260,10 @@ timer();
     let select1Header = document.querySelectorAll('.select-sort-by__header');
     let select1Item = document.querySelectorAll('.select-sort-by__item');
     select1Header.forEach(item => {
-        item.addEventListener('click', selectToggle)
+        item.addEventListener('click', selectToggle);
     });
     select1Item.forEach(item => {
-        item.addEventListener('click', selectChoose)
+        item.addEventListener('click', selectChoose);
     });
     function selectToggle() {
         this.parentElement.classList.toggle('select-by--active');
