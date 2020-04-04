@@ -40,7 +40,7 @@
         <a href="index.html" class="menu__logo"><img src="img/logo-big.png" alt="logo-big"></a>
         <nav class="menu__nav">
           <a href="#" class="menu__item">Объявления</a>
-          <a href="#" class="menu__item menu__item-dropdown">Каталоги <i class="header__icon fas fa-angle-down"></i>
+          <div class="menu__item menu__item-dropdown">Каталоги <i class="header__icon fas fa-angle-down"></i>
             <ul class="menu__dropdown-list">
               <li class="menu__dropdown-item">
                 <a href="catalog.html" class="menu__dropdown-link">Развлечения, досуг</a>
@@ -76,7 +76,7 @@
                 <a href="catalog.html" class="menu__dropdown-link">Инструменты</a>
               </li>
             </ul>
-          </a>
+          </div>
           <a href="#" class="menu__item">Участники</a>
           <a href="#" class="menu__item">Партнеры</a>
           <a href="#" class="menu__item">О платформе</a>
@@ -197,7 +197,7 @@
                 <div class="item__delivery-tab">
                   <input class="item__delivery-tab-input" id="delivery-tab-1" type="radio" name="delivery-tab" checked>
                   <label class="item__delivery-tab-title" for="delivery-tab-1">Самовывоз</label>
-                  <section class="item__delivery-tab-content">
+                  <div class="item__delivery-tab-content">
                     <div class="item__delivery-point-title">Пункты самовывоза:</div>
                     <!-- /.item__delivery-point-title -->
 
@@ -211,13 +211,13 @@
                       <span class="item__delivery-point-radio"></span>
                       Шоурум № 1 2018 (Абая 8 Торговый дом Алтын)
                     </label>
-                  </section>
+                  </div>
                 </div>
 
                 <div class="item__delivery-tab">
                   <input class="item__delivery-tab-input" id="delivery-tab-2" type="radio" name="delivery-tab">
                   <label class="item__delivery-tab-title" for="delivery-tab-2">Доставка</label>
-                  <section class="item__delivery-tab-content">
+                  <div class="item__delivery-tab-content">
                     <div class="item__delivery-point-title">Пункты доставки:</div>
                     <!-- /.item__delivery-point-title -->
 
@@ -231,7 +231,7 @@
                       <span class="item__delivery-point-radio"></span>
                       Шоурум № 1 2018 (Абая 8 Торговый дом Алтын)
                     </label>
-                  </section>
+                  </div>
                 </div>
               </div>
               <!-- /.item__delivery-type-tabs -->
@@ -273,7 +273,7 @@
               <div class="item__more-tab">
                 <input class="item__more-tab-input" id="item-more-char" type="radio" name="item-more" checked>
                 <label class="item__more-tab-title" for="item-more-char">Характеристики товара</label>
-                <section class="item__more-tab-content">
+                <div class="item__more-tab-content">
                   <div class="item__characteristics-row">
                     <div class="item__characteristics-param">ИНТ товара:</div>
                     <!-- /.item__characteristics-param -->
@@ -323,14 +323,14 @@
                     <!-- /.item__characteristics-value -->
                   </div>
                   <!-- /.item__characteristics-row -->
-                </section>
+                </div>
                 <!-- tab-content -->
               </div>
               <!-- /.item__more-tab -->
               <div class="item__more-tab">
                 <input class="item__more-tab-input" id="item-more-seller" type="radio" name="item-more">
                 <label class="item__more-tab-title" for="item-more-seller">Продавец</label>
-                <section class="item__more-tab-content">
+                <div class="item__more-tab-content">
                   <div class="item__characteristics-row">
                     <div class="item__characteristics-param">ИНТ товара:</div>
                     <!-- /.item__characteristics-param -->
@@ -380,14 +380,14 @@
                     <!-- /.item__characteristics-value -->
                   </div>
                   <!-- /.item__characteristics-row -->
-                </section>
+                </div>
                 <!-- tab-content -->
               </div>
               <!-- /.item__more-tab -->
               <div class="item__more-tab">
                 <input class="item__more-tab-input" id="item-more-other" type="radio" name="item-more">
                 <label class="item__more-tab-title" for="item-more-other">Товар на других сайтах</label>
-                <section class="item__more-tab-content">
+                <div class="item__more-tab-content">
                   <div class="item__characteristics-row">
                     <div class="item__characteristics-param">ИНТ товара:</div>
                     <!-- /.item__characteristics-param -->
@@ -437,7 +437,7 @@
                     <!-- /.item__characteristics-value -->
                   </div>
                   <!-- /.item__characteristics-row -->
-                </section>
+                </div>
                 <!-- tab-content -->
               </div>
               <!-- /.item__more-tab -->
@@ -452,27 +452,27 @@
             <div class="item__more-seen-row">
               <h4 class="item__more-seen-title">Недавно просмотренное</h4>
               <!-- /.item__more-seen-title -->
-              <a href="product.html" class="item__more-seen-card">
+              <div class="item__more-seen-card">
                 <img class="item__more-seen-card-img" src="img/popular/popular-2.png" alt="item-1">
                 <div class="item__more-seen-card-text">
                   <div class="item__more-seen-card-name">Пуховик артикул: 2801</div>
                   <div class="item__more-seen-card-category">Пуховики</div>
-                  <span class="item__more-seen-card-rating rating">
-                  <input class="rating__input" id="star-rating-85" type="radio" name="rating8" value="5">
-                  <label class="rating__ico far fa-star" for="star-rating-85" title="5 out of 5 stars"></label>
-                  <input class="rating__input" id="star-rating-84" type="radio" name="rating8" value="4">
-                  <label class="rating__ico far fa-star" for="star-rating-84" title="4 out of 5 stars"></label>
-                  <input class="rating__input" id="star-rating-83" type="radio" name="rating8" value="3">
-                  <label class="rating__ico far fa-star" for="star-rating-83" title="3 out of 5 stars"></label>
-                  <input class="rating__input" id="star-rating-82" type="radio" name="rating8" value="2">
-                  <label class="rating__ico far fa-star" for="star-rating-82" title="2 out of 5 stars"></label>
-                  <input class="rating__input" id="star-rating-81" type="radio" name="rating8" value="1">
-                  <label class="rating__ico far fa-star" for="star-rating-81" title="1 out of 5 stars"></label>
-                  </span>
+                  <div class="item__more-seen-card-rating rating">
+                    <input class="rating__input" id="star-rating-85" type="radio" name="rating8" value="5">
+                    <label class="rating__ico far fa-star" for="star-rating-85" title="5 out of 5 stars"></label>
+                    <input class="rating__input" id="star-rating-84" type="radio" name="rating8" value="4">
+                    <label class="rating__ico far fa-star" for="star-rating-84" title="4 out of 5 stars"></label>
+                    <input class="rating__input" id="star-rating-83" type="radio" name="rating8" value="3">
+                    <label class="rating__ico far fa-star" for="star-rating-83" title="3 out of 5 stars"></label>
+                    <input class="rating__input" id="star-rating-82" type="radio" name="rating8" value="2">
+                    <label class="rating__ico far fa-star" for="star-rating-82" title="2 out of 5 stars"></label>
+                    <input class="rating__input" id="star-rating-81" type="radio" name="rating8" value="1">
+                    <label class="rating__ico far fa-star" for="star-rating-81" title="1 out of 5 stars"></label>
+                    </div>
                   <div class="item__more-seen-card-price">21 200.00 <span>тг.</span></div>
                   <!-- card rating -->
                 </div>
-              </a>
+              </div>
               <!-- /.item__more-seen-card -->
               <div class="item__more-seen-card">
                 <img class="item__more-seen-card-img" src="img/popular/popular-1.png" alt="item-1">
@@ -936,9 +936,8 @@
   <!-- /.popup -->
 
   <script src="js/jquery-3.4.1.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.js"></script>
-  <script type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.4/moment-timezone-with-data.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.4/moment-timezone-with-data.js"></script>
   <script src="js/swiper.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/main.js"></script>

@@ -828,7 +828,8 @@ input.invalid {
   color: black;
   font-weight: 500;
   font-family: "DIN Pro - Medium", sans-serif;
-  position: relative; }
+  position: relative;
+  cursor: pointer; }
 
 .menu__search {
   color: #f47920; }
