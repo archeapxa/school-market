@@ -620,6 +620,37 @@ div.invalid {
 input.invalid {
   border-bottom: 1px solid tomato; }
 
+.rating {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  max-width: 101px;
+  width: 100%;
+  color: #a0a0a0; }
+  .rating input {
+    display: none; }
+
+.rating__ico:hover,
+.rating__ico:hover ~ .rating__ico,
+.rating__input:checked ~ .rating__ico {
+  font-weight: 900; }
+
+.rating__ico:hover:before,
+.rating__ico:hover ~ .rating__ico:before,
+.rating__input:checked ~ .rating__ico:before {
+  color: #f47920;
+    color-font-weight: 900; }
+
 @font-face {
   font-family: 'DIN Pro';
   src: url("../fonts/DIN/DINPro.woff") format("woff"), url("../fonts/DIN/DINPro.woff2") format("woff2");
@@ -2153,7 +2184,8 @@ input.invalid {
       display: inline-block;
       font-size: 1.31rem;
       padding: 15px 23px;
-      margin-right: 24px; }
+      margin-right: 24px;
+      cursor: pointer; }
     .item__more-tab-input {
       display: none; }
     .item__more-tab-content {
@@ -2195,7 +2227,9 @@ input.invalid {
     display: flex;
     padding-bottom: 2rem;
     border-bottom: 1px solid #cccccc;
-    margin-top: 2.15rem; }
+    margin-top: 2.15rem;
+    color: #202020;
+    text-decoration: none; }
     .item__more-seen-card:last-of-type {
       border: none;
       padding-bottom: 1.75rem; }
