@@ -1132,7 +1132,7 @@ input.invalid {
             justify-content: flex-start; }
   .hero__text {
     position: relative;
-    margin-bottom: 13.7rem;
+    margin-bottom: 14.7rem;
     margin-left: 0.1rem; }
     .hero__text::before {
       content: '';
@@ -1148,7 +1148,7 @@ input.invalid {
     font-family: "DIN Pro - Light", sans-serif;
     font-weight: 300;
     max-width: 30rem;
-    margin-bottom: 2.2rem;
+    margin-bottom: 3.2rem;
     line-height: 130%; }
     .hero__title--bold {
       font-family: "DIN Pro - Bold", sans-serif; }
@@ -1289,13 +1289,15 @@ input.invalid {
       text-align: right;
       margin-bottom: 4.1rem; }
     .approved__card-text {
-      margin-bottom: 2.1rem;
+      margin-bottom: 3.1rem;
+      margin-top: auto;
       min-width: 11.6rem;
       text-align: right;
       color: #919191;
       font-weight: normal;
       line-height: 135%; }
       .approved__card-text--bold {
+        display: inline-block;
         font-size: 1.71rem;
         color: #202020; }
 
@@ -1431,7 +1433,7 @@ input.invalid {
 .discount {
   background-color: #ffffff;
   padding-top: 2.14rem;
-  padding-bottom: 5rem; }
+  padding-bottom: 7rem; }
   .discount--small {
     padding-bottom: 0.3rem; }
   .discount__container {
@@ -1511,7 +1513,8 @@ input.invalid {
     line-height: 6rem;
     color: #ffffff;
     text-transform: uppercase;
-    margin-top: 3.8rem; }
+    margin-top: 3.8rem;
+    margin-bottom: 0; }
   .banner__text {
     margin-top: 0.75rem;
     color: #ffffff;
@@ -1533,8 +1536,9 @@ input.invalid {
             align-self: flex-end; }
 
 .platforms {
-  padding-top: 4rem;
-  background-color: #ffffff; }
+  padding-top: 4.2rem;
+  background-color: #ffffff;
+  padding-bottom: 0.2rem; }
   .platforms__section-title {
     margin-bottom: 0.5rem; }
   .platforms-swiper {
@@ -2379,6 +2383,8 @@ input.invalid {
     max-height: 4.64rem;
     margin-bottom: 0rem;
     margin-top: 0; }
+  .footer__google-play {
+    margin-bottom: 0.8rem; }
   .footer__button {
     margin-top: 1.4rem;
     text-decoration: none;
